@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shadinota Tech</title>
+<meta name="description" content="Shadinota Tech, Khulna, Bangladesh. Makers of CardCraft – ID Card Maker for Android.">
+<link rel="icon" href="img/cardcraft-icon.png">
+<style>
+:root{--bg:#f4f6fb;--fg:#131826;--muted:#566177;--line:#dde3ee;--card:#fff;--accent:#1f4fd1;--accent-ink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0e121a;--fg:#e8ecf4;--muted:#9aa4b8;--line:#283041;--card:#161b26;--accent:#7c9dff;--accent-ink:#0a1022}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Bengali",sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header{padding:28px 0 8px}
+.brand{font-weight:800;font-size:20px;letter-spacing:-.01em}
+.brand span{color:var(--muted);font-weight:500;font-size:15px;margin-left:8px}
+.app{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;margin:28px 0 20px}
+.app img.icon{width:120px;height:120px;border-radius:26px;box-shadow:0 10px 24px -12px rgba(16,30,80,.5)}
+h1{margin:0 0 6px;font-size:28px;line-height:1.2;letter-spacing:-.01em}
+.app p{margin:0 0 14px;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;padding:10px 16px;border-radius:999px;border:1px solid var(--line);color:var(--fg);text-decoration:none;font-weight:600;font-size:14px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.feature{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);display:block}
+ul{padding-left:20px;color:var(--muted)}
+footer{border-top:1px solid var(--line);margin-top:36px;padding:20px 0 40px;color:var(--muted);font-size:14px}
+footer a{color:var(--accent)}
+@media (max-width:560px){.app{grid-template-columns:1fr;text-align:left}.app img.icon{width:88px;height:88px;border-radius:20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="brand">Shadinota Tech<span>Khulna, Bangladesh</span></div></header>
+<section class="app">
+  <img class="icon" src="img/cardcraft-icon.png" alt="CardCraft app icon">
+  <div>
+    <h1>CardCraft – ID Card Maker</h1>
+    <p>Make office, school and event ID cards on your phone. 62 templates, portrait or landscape, photo crop, QR and barcode, print-ready A4 PDF.</p>
+    <div class="btns">
+      <a class="btn primary" href="privacy.html">Privacy policy</a>
+      <a class="btn" href="mailto:shadinotatech@gmail.com">Contact</a>
+    </div>
+  </div>
+</section>
+<img class="feature" src="img/cardcraft-feature.png" alt="CardCraft ID cards preview" width="1024" height="500">
+<ul>
+  <li>Cards and photos stay on your phone. No account needed.</li>
+  <li>Free version with ads; CardCraft Pro removes ads and limits.</li>
+</ul>
+<footer>© 2026 Shadinota Tech · <a href="privacy.html">Privacy policy</a> · <a href="mailto:shadinotatech@gmail.com">shadinotatech@gmail.com</a></footer>
+</div>
+</body>
+</html>

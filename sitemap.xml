@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://shadinotatech.com/</loc></url>
-<url><loc>https://shadinotatech.com/cardcraft/</loc></url>
-<url><loc>https://shadinotatech.com/privacy</loc></url>
-<url><loc>https://shadinotatech.com/invoiceatlas/privacy</loc></url>
+<url><loc>https://shadinotatech.com/</loc><lastmod>2026-11-15</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<url><loc>https://shadinotatech.com/cardcraft/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://shadinotatech.com/blog/</loc><lastmod>2026-11-15</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://shadinotatech.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<url><loc>https://shadinotatech.com/invoiceatlas/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<url><loc>https://shadinotatech.com/blog/how-to-print-id-cards-on-a4-paper/</loc><lastmod>2026-11-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

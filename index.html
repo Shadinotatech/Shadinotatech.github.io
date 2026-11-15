@@ -170,6 +170,15 @@ section.sec{padding:120px 0}
 .step h3{margin:14px 0 8px;font-size:20px}
 .step p{margin:0;color:var(--muted);font-size:15px}
 
+/* blog block */
+.bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.bcard{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--card);transition:border-color .25s,transform .25s}
+.bcard:hover{border-color:var(--line2);transform:translateY(-3px)}
+.bcard img{width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;border-bottom:1px solid var(--line)}
+.bcard div{padding:20px 22px 24px}.bcard span{font-size:12.5px;color:var(--acc);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.bcard h3{margin:8px 0 0;font-size:20px;line-height:1.25}
+@media (max-width:1000px){.bgrid{grid-template-columns:1fr}}
+
 /* contact */
 .contact{border:1px solid var(--line);border-radius:40px;padding:clamp(40px,7vw,96px);text-align:center;position:relative;overflow:hidden;background:var(--card)}
 .contact:before{content:"";position:absolute;inset:-40% -10% auto;height:120%;background:radial-gradient(closest-side,rgba(79,227,193,.18),transparent);pointer-events:none}
@@ -179,7 +188,7 @@ section.sec{padding:120px 0}
 .contact .cta{justify-content:center;position:relative}
 
 footer{padding:64px 0 40px;margin-top:120px;border-top:1px solid var(--line)}
-.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:32px}
 .fgrid h4{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin:0 0 14px;font-weight:600}
 .fgrid a{display:block;color:var(--muted);font-size:14.5px;padding:4px 0}
 .fgrid a:hover{color:var(--fg)}
@@ -225,7 +234,7 @@ footer{padding:64px 0 40px;margin-top:120px;border-top:1px solid var(--line)}
   <nav class="main wrap" aria-label="Main">
     <a class="brand" href="/"><img src="/assets/logo-white-256.webp" alt="" width="38" height="38">Shadinota Tech</a>
     <div class="links" id="links">
-      <a href="#apps">Apps</a><a href="#studio">Studio</a><a href="#process">Process</a><a href="#contact">Contact</a>
+      <a href="#apps">Apps</a><a href="#studio">Studio</a><a href="/blog/">Blog</a><a href="#contact">Contact</a>
     </div>
     <a class="btn sm nav-cta" href="https://play.google.com/store/apps/developer?id=Shadinotatech" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 2.6v18.8c0 .4.4.6.7.4L21 12.4a.5.5 0 0 0 0-.8L4.7 2.2c-.3-.2-.7 0-.7.4Z"/></svg>All apps on Play</a>
@@ -380,6 +389,15 @@ footer{padding:64px 0 40px;margin-top:120px;border-top:1px solid var(--line)}
     </div>
   </section>
 
+  <!-- BLOG:START -->
+  <section class="sec" id="blog" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv"><div><p class="eyebrow">From the blog</p><h2 class="h">Guides for better ID cards</h2></div><a class="btn" href="/blog/">All articles</a></div>
+      <div class="bgrid"><a class="bcard rv" href="/blog/how-to-print-id-cards-on-a4-paper/"><img src="/blog/how-to-print-id-cards-on-a4-paper/og.png" alt="" width="1200" height="630"><div><span>Printing · 9 min</span><h3 class="h">How to Print ID Cards on A4 Paper (Layouts, Settings and Cutting)</h3></div></a></div>
+    </div>
+  </section>
+  <!-- BLOG:END -->
+
   <!-- CONTACT -->
   <section class="wrap" id="contact">
     <div class="contact rv">
@@ -403,6 +421,7 @@ footer{padding:64px 0 40px;margin-top:120px;border-top:1px solid var(--line)}
         <p>Simple Android apps for everyday work. Made with care in Khulna, Bangladesh.</p>
       </div>
       <div><h4>Apps</h4><a href="/cardcraft/">CardCraft</a><a href="https://play.google.com/store/apps/details?id=com.shadinota.smartid" target="_blank" rel="noopener">CardCraft on Play</a><a href="#apps">InvoiceAtlas</a></div>
+      <div><h4>Resources</h4><a href="/blog/">Blog</a><a href="/blog/feed.xml">RSS feed</a></div>
       <div><h4>Legal</h4><a href="/privacy.html">CardCraft privacy</a><a href="/invoiceatlas/privacy.html">InvoiceAtlas privacy</a></div>
       <div><h4>Contact</h4><a href="mailto:shadinotatech@gmail.com">Email us</a><a href="https://play.google.com/store/apps/developer?id=Shadinotatech" target="_blank" rel="noopener">Google Play</a></div>
     </div>

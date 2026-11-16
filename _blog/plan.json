@@ -18,7 +18,7 @@
   },
   {
    "n": 2,
-   "status": "todo",
+   "status": "published",
    "slug": "id-card-size-cr80-mm-inches-pixels",
    "primary": "id card size in pixels",
    "secondary": [
@@ -28,7 +28,8 @@
     "cr79 cr100 size"
    ],
    "intent": "reference",
-   "angle": "One definitive size table (mm/in/px at 300 and 600 DPI), corner radius, thickness, bleed and safe zone, portrait vs landscape, badge sizes (4x3, 3R, 4R, A6)."
+   "angle": "One definitive size table (mm/in/px at 300 and 600 DPI), corner radius, thickness, bleed and safe zone, portrait vs landscape, badge sizes (4x3, 3R, 4R, A6).",
+   "published": "2026-11-16"
   },
   {
    "n": 3,

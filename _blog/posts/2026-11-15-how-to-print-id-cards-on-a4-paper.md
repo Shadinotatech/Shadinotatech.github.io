@@ -3,6 +3,7 @@ title: How to Print ID Cards on A4 Paper (Layouts, Settings and Cutting)
 description: Exactly how many CR80 ID cards fit on an A4 sheet, the margins and gaps that work, the print settings that keep cards true to size, and how to line up the backs for double-sided printing.
 slug: how-to-print-id-cards-on-a4-paper
 date: 2026-11-15
+updated: 2026-11-16
 category: Printing
 keywords: how to print id cards on a4 paper, how many id cards on a4 sheet, print id card at home, id card a4 layout, double sided id card printing
 ---
@@ -32,7 +33,7 @@ Almost every ID card, bank card and staff badge uses the same format, called **C
 | Corner radius | about 3.18 mm |
 | Typical PVC thickness | 0.76 mm (30 mil) |
 
-Keep this size in mind, because every layout decision below comes from it. If your design file is not exactly 85.6 × 54 mm (or the same ratio at 300 DPI), fix that first. A card that is a few millimetres too big will not fit a standard holder, and one that is too small looks cheap and leaves a white border after cutting.
+Keep this size in mind, because every layout decision below comes from it. (For CR79, CR100, badge sizes, bleed and pixel values at 600 DPI, see our [ID card size chart in mm, inches and pixels](/blog/id-card-size-cr80-mm-inches-pixels/).) If your design file is not exactly 85.6 × 54 mm (or the same ratio at 300 DPI), fix that first. A card that is a few millimetres too big will not fit a standard holder, and one that is too small looks cheap and leaves a white border after cutting.
 
 ## How many ID cards fit on an A4 sheet?
 

@@ -33,7 +33,7 @@
   },
   {
    "n": 3,
-   "status": "todo",
+   "status": "published",
    "slug": "how-to-make-id-cards-on-your-phone",
    "primary": "how to make id card on mobile",
    "secondary": [
@@ -42,7 +42,8 @@
     "make id card with photo on phone"
    ],
    "intent": "pillar how-to",
-   "angle": "PILLAR. End-to-end workflow on a phone: plan fields, photos, template, data import, print/export, quality checks. Links to every cluster post."
+   "angle": "PILLAR. End-to-end workflow on a phone: plan fields, photos, template, data import, print/export, quality checks. Links to every cluster post.",
+   "published": "2026-11-17"
   },
   {
    "n": 4,

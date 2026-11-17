@@ -3,7 +3,7 @@ title: How to Print ID Cards on A4 Paper (Layouts, Settings and Cutting)
 description: Exactly how many CR80 ID cards fit on an A4 sheet, the margins and gaps that work, the print settings that keep cards true to size, and how to line up the backs for double-sided printing.
 slug: how-to-print-id-cards-on-a4-paper
 date: 2026-11-15
-updated: 2026-11-16
+updated: 2026-11-17
 category: Printing
 keywords: how to print id cards on a4 paper, how many id cards on a4 sheet, print id card at home, id card a4 layout, double sided id card printing
 ---
@@ -19,7 +19,7 @@ keywords: how to print id cards on a4 paper, how many id cards on a4 sheet, prin
 
 You do not need a dedicated card printer to make good ID cards. Most schools, offices and small print shops we work with print on an ordinary inkjet or laser printer, on A4 sheets, and then cut and laminate. The quality comes almost entirely from three things: the layout on the sheet, the print settings, and how carefully you cut.
 
-This guide walks through all three, with the exact numbers.
+This guide walks through all three, with the exact numbers. (If you are still at the design stage, start with our step-by-step guide on [how to make ID cards on your phone](/blog/how-to-make-id-cards-on-your-phone/), from collecting the list to the print-ready PDF.)
 
 ## The size you are printing: CR80
 

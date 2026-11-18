@@ -3,6 +3,7 @@ title: How to Make ID Cards on Mobile: The Complete Phone Workflow
 description: How to make ID cards on mobile from start to finish: plan the fields, collect data and photos, pick a template, check every card and print A4 sheets at 300 DPI.
 slug: how-to-make-id-cards-on-your-phone
 date: 2026-11-17
+updated: 2026-11-18
 category: Guides
 keywords: how to make id card on mobile, id card maker app, id card maker for android, make id card with photo on phone, print id card from phone, bulk id cards on phone
 ---
@@ -68,7 +69,7 @@ Decide three things before you open any app, because changing them later means r
 
 **Size and orientation.** The standard is **CR80, 85.6 × 54 mm**, the same as a bank card, and it fits every standard holder. Portrait suits lanyards; landscape suits wallets and clip holders. Event badges are often larger (4 × 3 in, 3R, 4R or A6). Our [ID card size chart](/blog/id-card-size-cr80-mm-inches-pixels/) has every size in mm, inches and pixels.
 
-**Fields.** Keep the front to what someone needs to identify the holder at a glance, and move everything else to the back.
+**Fields.** Keep the front to what someone needs to identify the holder at a glance, and move everything else to the back. For staff cards in particular, our [employee ID card design guide](/blog/employee-id-card-design-what-to-include/) lists every field, what never to print and the font sizes to use.
 
 | Card type | Front (essential) | Back (useful) |
 |---|---|---|

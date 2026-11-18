@@ -47,7 +47,7 @@
   },
   {
    "n": 4,
-   "status": "todo",
+   "status": "published",
    "slug": "employee-id-card-design-what-to-include",
    "primary": "employee id card design",
    "secondary": [
@@ -56,7 +56,8 @@
     "office id card"
    ],
    "intent": "how-to",
-   "angle": "Front vs back field checklist, hierarchy, privacy (what NOT to print), examples by company size."
+   "angle": "Front vs back field checklist, hierarchy, privacy (what NOT to print), examples by company size.",
+   "published": "2026-11-18"
   },
   {
    "n": 5,

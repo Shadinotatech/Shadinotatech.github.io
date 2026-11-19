@@ -4,6 +4,7 @@ description: Employee ID card design made simple: which fields go on the front a
 slug: employee-id-card-design-what-to-include
 date: 2026-11-18
 category: Design
+updated: 2026-11-19
 keywords: employee id card design, what to include on employee id card, staff id card format, office id card, employee id card back side, employee badge privacy
 ---
 
@@ -170,6 +171,8 @@ Practice in Bangladesh differs from many Western guides in a few ways:
 - **Printing is usually on A4.** Most small and mid-size organisations print cards on A4 sheets at a local print shop, then laminate and cut them, rather than buying a card printer.
 
 If you make your cards on a phone, CardCraft's Employee ID card type already has these fields set up, including department and blood group, and suggests designations and departments as you type. Its dashboard also shows which cards are missing a photo and which expire in the next 30 days, which is the part of a renewal cycle most offices forget. Our full guide to [making ID cards on your phone](/blog/how-to-make-id-cards-on-your-phone/) walks through the whole workflow.
+
+If you also make cards for a school or madrasa, the fields are different (class, section, guardian phone, session year); see our [school ID card design guide](/blog/school-id-card-design-guide/).
 
 ## Checklist before you approve the design
 

@@ -61,7 +61,7 @@
   },
   {
    "n": 5,
-   "status": "todo",
+   "status": "published",
    "slug": "school-id-card-design-guide",
    "primary": "school id card design",
    "secondary": [
@@ -70,7 +70,8 @@
     "madrasa id card"
    ],
    "intent": "how-to",
-   "angle": "Fields for students (class, section, roll, guardian phone, blood group), age-appropriate privacy, yearly renewal workflow for schools and madrasas."
+   "angle": "Fields for students (class, section, roll, guardian phone, blood group), age-appropriate privacy, yearly renewal workflow for schools and madrasas.",
+   "published": "2026-11-19"
   },
   {
    "n": 6,

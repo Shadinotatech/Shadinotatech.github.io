@@ -75,7 +75,7 @@
   },
   {
    "n": 6,
-   "status": "todo",
+   "status": "published",
    "slug": "how-to-take-id-card-photo-with-phone",
    "primary": "how to take id card photo",
    "secondary": [
@@ -84,7 +84,8 @@
     "passport size photo for id card"
    ],
    "intent": "how-to",
-   "angle": "Lighting, plain background, framing, head size ratio, batch photo day for a whole school/office, common rejects."
+   "angle": "Lighting, plain background, framing, head size ratio, batch photo day for a whole school/office, common rejects.",
+   "published": "2026-11-20"
   },
   {
    "n": 7,

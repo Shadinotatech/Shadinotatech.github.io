@@ -3,7 +3,7 @@ title: How to Make ID Cards on Mobile: The Complete Phone Workflow
 description: How to make ID cards on mobile from start to finish: plan the fields, collect data and photos, pick a template, check every card and print A4 sheets at 300 DPI.
 slug: how-to-make-id-cards-on-your-phone
 date: 2026-11-17
-updated: 2026-11-18
+updated: 2026-11-20
 category: Guides
 keywords: how to make id card on mobile, id card maker app, id card maker for android, make id card with photo on phone, print id card from phone, bulk id cards on phone
 ---
@@ -108,7 +108,7 @@ You can build the sheet in Excel or Google Sheets on a computer, or in the Sheet
 
 ## Step 4: Take photos that print well
 
-The photo makes or breaks an ID card, and a phone can take a better ID photo than most people expect, if you control the light and background.
+The photo makes or breaks an ID card, and a phone can take a better ID photo than most people expect, if you control the light and background. (For the full setup, exact crop sizes and a retake checklist, see our guide on [how to take an ID card photo with your phone](/blog/how-to-take-id-card-photo-with-phone/).)
 
 - **Background:** a plain, light wall or a sheet of white chart paper taped behind the chair. Avoid patterned curtains and windows behind the person.
 - **Light:** face a window or a bright light, so the face is evenly lit. Light from behind turns the face dark.

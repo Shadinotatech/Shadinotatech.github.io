@@ -4,7 +4,7 @@ description: Employee ID card design made simple: which fields go on the front a
 slug: employee-id-card-design-what-to-include
 date: 2026-11-18
 category: Design
-updated: 2026-11-19
+updated: 2026-11-21
 keywords: employee id card design, what to include on employee id card, staff id card format, office id card, employee id card back side, employee badge privacy
 ---
 
@@ -157,7 +157,7 @@ You can copy and adapt these lines. Replace the parts in square brackets.
 
 > Valid until: [31 December 2027] · Blood group: [B+] · Emergency: [office or HR phone]
 
-Keep the back to four or five lines plus the signature; longer rules belong in the staff handbook.
+Keep the back to four or five lines plus the signature; longer rules belong in the staff handbook. For more wording (visitor, factory, student and membership cards, plus Bangla versions) and a to-scale back layout, see our guide to [what to put on the back side of an ID card](/blog/what-to-put-on-the-back-of-an-id-card/).
 
 ## Employee ID cards in Bangladesh: law and practice
 

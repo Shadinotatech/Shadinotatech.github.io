@@ -105,16 +105,19 @@
     },
     {
       "n": 8,
-      "status": "todo",
+      "status": "published",
       "slug": "pvc-id-card-printing-at-home",
       "primary": "pvc id card printing",
       "secondary": [
         "inkjet pvc card",
         "a4 pvc sheet id card",
-        "pvc id card price in bangladesh"
+        "pvc id card price in bangladesh",
+        "pvc id card printing at home",
+        "dragon sheet id card"
       ],
       "intent": "how-to/commercial",
-      "angle": "Inkjet PVC cards vs A4 PVC/'dragon' sheets vs laminated paper vs card printers; cost per card; Bangladesh price ranges."
+      "angle": "Inkjet PVC cards vs A4 PVC/'dragon' sheets vs laminated paper vs card printers; cost per card; Bangladesh price ranges.",
+      "published": "2026-11-22"
     },
     {
       "n": 9,

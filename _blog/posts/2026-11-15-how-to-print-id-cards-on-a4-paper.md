@@ -3,7 +3,7 @@ title: How to Print ID Cards on A4 Paper (Layouts, Settings and Cutting)
 description: Exactly how many CR80 ID cards fit on an A4 sheet, the margins and gaps that work, the print settings that keep cards true to size, and how to line up the backs for double-sided printing.
 slug: how-to-print-id-cards-on-a4-paper
 date: 2026-11-15
-updated: 2026-11-17
+updated: 2026-11-22
 category: Printing
 keywords: how to print id cards on a4 paper, how many id cards on a4 sheet, print id card at home, id card a4 layout, double sided id card printing
 ---
@@ -131,7 +131,7 @@ What you print on decides how long the cards last. Here are the common options, 
 | Inkjet PVC sheets (A4) | Heat-laminate onto a PVC core, then punch or cut | Cards that feel like real plastic | Needs a compatible inkjet and a laminator; more steps |
 | Pre-cut inkjet PVC cards | Print in a card tray (some inkjet printers) | Small batches of plastic cards | Only certain printers have a card tray |
 
-In Bangladesh, blank PVC cards are cheap. Listings on local marketplaces in 2026 show blank inkjet-coated PVC cards from about ৳6 each and Zebra CR80 blanks around ৳8. Dedicated card printers start much higher; single-sided Zebra models are listed from about ৳82,000. For most schools and offices printing a few hundred cards a year, A4 printing plus lamination is far cheaper. We will cover the full cost comparison in a separate guide.
+In Bangladesh, blank PVC cards are cheap. Listings on local marketplaces in 2026 show blank inkjet-coated PVC cards from about ৳6 each and Zebra CR80 blanks around ৳8. Dedicated card printers start much higher; single-sided Zebra models are listed from about ৳82,000. For most schools and offices printing a few hundred cards a year, A4 printing plus lamination is far cheaper. If you want cards that feel like real plastic, our guide to [PVC ID card printing at home](/blog/pvc-id-card-printing-at-home/) compares inkjet PVC cards, A4 PVC sheet sets and card printers, with cost per card.
 
 ## Cutting the cards neatly
 

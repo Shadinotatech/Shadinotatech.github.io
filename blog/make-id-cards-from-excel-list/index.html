@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ID Cards from Excel Data: Prepare, Import and Bulk Print | Shadinota Tech</title>
+<meta name="description" content="Make ID cards from Excel data without retyping: the column layout, formulas that catch errors, photo file naming, CSV UTF-8 for Bangla and bulk printing steps.">
+<link rel="canonical" href="https://shadinotatech.com/blog/make-id-cards-from-excel-list/">
+<link rel="icon" href="/favicon.ico?v=2" sizes="any">
+<link rel="apple-touch-icon" href="/assets/icon-v2-180.png">
+<link rel="alternate" type="application/rss+xml" title="Shadinota Tech Blog" href="https://shadinotatech.com/blog/feed.xml">
+<meta name="theme-color" content="#09090b">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Shadinota Tech">
+<meta property="og:title" content="ID Cards from Excel Data: Prepare, Import and Bulk Print | Shadinota Tech">
+<meta property="og:description" content="Make ID cards from Excel data without retyping: the column layout, formulas that catch errors, photo file naming, CSV UTF-8 for Bangla and bulk printing steps.">
+<meta property="og:url" content="https://shadinotatech.com/blog/make-id-cards-from-excel-list/">
+<meta property="og:image" content="https://shadinotatech.com/blog/make-id-cards-from-excel-list/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "ID Cards from Excel Data: Prepare, Import and Bulk Print", "description": "Make ID cards from Excel data without retyping: the column layout, formulas that catch errors, photo file naming, CSV UTF-8 for Bangla and bulk printing steps.", "image": "https://shadinotatech.com/blog/make-id-cards-from-excel-list/og.png", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Organization", "name": "Shadinota Tech Team", "url": "https://shadinotatech.com/"}, "publisher": {"@type": "Organization", "name": "Shadinota Tech", "logo": {"@type": "ImageObject", "url": "https://shadinotatech.com/assets/icon-v2-512.png"}}, "mainEntityOfPage": "https://shadinotatech.com/blog/make-id-cards-from-excel-list/", "keywords": "id card from excel data, bulk id card maker, id card csv import, mass id card printing, id card mail merge, excel to id card", "wordCount": 2536, "inLanguage": "en"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://shadinotatech.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://shadinotatech.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "ID Cards from Excel Data: Prepare, Import and Bulk Print", "item": "https://shadinotatech.com/blog/make-id-cards-from-excel-list/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I make ID cards from an Excel list?", "acceptedAnswer": {"@type": "Answer", "text": "Clean the sheet first: one header row, one row per person, ID and phone columns stored as text. Save it as XLSX or CSV UTF-8, import it into an ID card maker or a Word mail merge, add photos named by ID number, proof a sample and print 300 DPI A4 sheets at 100% scale."}}, {"@type": "Question", "name": "Can I add photos to ID cards automatically from Excel?", "acceptedAnswer": {"@type": "Answer", "text": "Excel itself does not hold photos for a merge; it holds the file names. Name each photo after the person's ID number and keep all photos in one folder, then use a tool that adds photos in bulk or a Word INCLUDEPICTURE field that points to each file. Check for missing photos before printing."}}, {"@type": "Question", "name": "Why does Excel remove the zero from my ID numbers?", "acceptedAnswer": {"@type": "Answer", "text": "Excel treats 0045 as the number 45 and drops the leading zero. Format the column as Text before you enter or paste the data, or type an apostrophe before the value. Phone numbers such as 01712345678 need the same treatment."}}, {"@type": "Question", "name": "Should I use CSV or XLSX for ID card import?", "acceptedAnswer": {"@type": "Answer", "text": "Either works if your tool accepts it. XLSX keeps text formatting more reliably, while CSV is simpler and accepted almost everywhere. If you use CSV and any names are in Bangla or another non-Latin script, save as CSV UTF-8, or the text may turn into question marks."}}, {"@type": "Question", "name": "How many ID cards can I print from one Excel sheet?", "acceptedAnswer": {"@type": "Answer", "text": "There is no fixed limit in the spreadsheet itself; the limit is your tool and your printer. Plan paper by dividing the number of people by cards per sheet: at 10 CR80 cards per A4 sheet, 400 people need 40 sheets, plus a few for tests and reprints."}}]}</script>
+
+<style>
+:root{--bg:#09090b;--bg2:#0f0f12;--card:#131317;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.14);--fg:#f4f4f5;--muted:#a1a1aa;--dim:#71717a;--acc:#4fe3c1;--acc2:#8b9cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.75 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{max-width:100%;height:auto}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.h{font-family:Sora,Inter,sans-serif;letter-spacing:-.03em;line-height:1.15}
+.bgfx{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(800px 500px at 85% -10%,rgba(79,227,193,.10),transparent 60%),radial-gradient(700px 500px at -10% 30%,rgba(139,156,255,.07),transparent 60%),var(--bg)}
+header.top{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(9,9,11,.72);border-bottom:1px solid var(--line)}
+nav.main{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font:700 18px Sora,sans-serif;letter-spacing:-.02em}.brand img{width:36px;height:36px}
+.links{display:flex;gap:4px}.links a{padding:8px 14px;border-radius:999px;font-size:14.5px;color:var(--muted)}.links a:hover,.links a.on{color:var(--fg);background:rgba(255,255,255,.06)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:11px 20px;border-radius:14px;font-weight:600;font-size:15px;border:1px solid var(--line2);background:rgba(255,255,255,.03);transition:.2s;color:var(--fg)}
+.btn:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.3)}.btn.pri{background:var(--fg);color:#09090b;border-color:var(--fg)}
+@media(max-width:720px){.links{display:none}}
+/* article */
+.crumbs{font-size:14px;color:var(--dim);margin:40px 0 18px}.crumbs a:hover{color:var(--fg)}
+.post-head{max-width:820px}
+.cat{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-bottom:14px}
+.post-head h1{font-size:clamp(32px,4.6vw,54px);margin:0 0 18px}
+.lede{font-size:clamp(18px,1.6vw,20px);color:var(--muted);margin:0 0 22px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--dim);padding-bottom:28px;border-bottom:1px solid var(--line)}
+.layout{display:grid;grid-template-columns:minmax(0,720px) 260px;gap:64px;justify-content:space-between;padding:40px 0 40px}
+.toc{position:sticky;top:96px;align-self:start;font-size:14px;border-left:1px solid var(--line);padding-left:18px}
+.toc b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:10px}
+.toc a{display:block;color:var(--muted);padding:5px 0;line-height:1.4}.toc a:hover{color:var(--fg)}
+.toc a.btn{display:flex;color:#09090b;padding:8px 14px}
+.toc .side-cta{margin-top:26px;padding:18px;border:1px solid var(--line2);border-radius:16px;background:var(--card)}
+.toc .side-cta p{margin:0 0 12px;color:var(--muted);font-size:13.5px;line-height:1.5}
+@media(max-width:1000px){.layout{grid-template-columns:minmax(0,1fr)}.toc{display:none}}
+.prose h2{font-family:Sora,Inter,sans-serif;letter-spacing:-.025em;font-size:clamp(25px,2.6vw,32px);line-height:1.2;margin:56px 0 16px;scroll-margin-top:90px}
+.prose h3{font-family:Sora,Inter,sans-serif;font-size:21px;letter-spacing:-.02em;margin:34px 0 10px;scroll-margin-top:90px}
+.prose p,.prose li{color:#d4d4d8}.prose strong{color:var(--fg)}
+.prose a{color:var(--acc);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.prose ul,.prose ol{padding-left:24px}.prose li{margin:6px 0}
+.prose blockquote{margin:28px 0;padding:18px 22px;border:1px solid rgba(79,227,193,.25);background:rgba(79,227,193,.06);border-radius:16px}
+.prose blockquote p{margin:0;color:var(--fg)}
+.prose table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;display:block;overflow-x:auto}
+.prose th,.prose td{border-bottom:1px solid var(--line2);padding:11px 12px;text-align:left;vertical-align:top;white-space:nowrap}
+.prose td{white-space:normal}.prose th{color:var(--fg);font-weight:600;background:rgba(255,255,255,.03)}
+.prose code{font-size:.9em;background:rgba(255,255,255,.07);padding:2px 6px;border-radius:6px}
+.prose figure{margin:32px 0}.prose figure img,.prose figure svg{display:block;width:100%;border-radius:18px;border:1px solid var(--line)}
+.prose figcaption{font-size:14px;color:var(--dim);margin-top:10px;text-align:center}
+.prose hr{border:0;border-top:1px solid var(--line);margin:48px 0}
+.keytakeaways{border:1px solid var(--line2);background:var(--card);border-radius:20px;padding:22px 26px;margin:0 0 32px}
+.keytakeaways b{display:block;font-family:Sora,sans-serif;margin-bottom:6px}
+.keytakeaways>p:first-child{margin-top:0}
+.keytakeaways ul{margin:0}
+.cta{margin:48px 0;border:1px solid var(--line2);border-radius:24px;padding:30px;background:linear-gradient(135deg,#15151a,#0d0d10);display:grid;grid-template-columns:72px 1fr;gap:20px;align-items:center}
+.cta img{width:72px;height:72px;border-radius:18px}
+.cta h3{margin:0 0 6px!important;font-size:21px}.cta p{margin:0 0 16px!important;color:var(--muted)!important;font-size:15.5px}
+@media(max-width:600px){.cta{grid-template-columns:1fr}}
+.author{display:flex;gap:16px;align-items:center;border-top:1px solid var(--line);margin-top:48px;padding-top:28px;font-size:15px;color:var(--muted)}
+.author img{width:52px;height:52px}.author b{color:var(--fg);display:block}
+.related{border-top:1px solid var(--line);padding:56px 0 24px}
+.related h2{font-size:28px;margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.pcard{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--card);transition:border-color .25s,transform .25s;display:flex;flex-direction:column}
+.pcard:hover{border-color:var(--line2);transform:translateY(-3px)}
+.pcard img{aspect-ratio:1200/630;object-fit:cover;width:100%;display:block;border-bottom:1px solid var(--line)}
+.pcard .pb{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px}
+.pcard .c{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--acc)}
+.pcard h3{margin:0;font-size:20px}.pcard p{margin:0;color:var(--muted);font-size:15px;line-height:1.6}
+.pcard .d{font-size:13px;color:var(--dim)}
+.bloghero{padding:72px 0 40px;max-width:760px}
+.bloghero h1{font-size:clamp(40px,6vw,72px);margin:12px 0 16px}.bloghero p{color:var(--muted);font-size:19px;margin:0}
+footer{border-top:1px solid var(--line);margin-top:80px;padding:32px 0 40px;font-size:14px;color:var(--dim)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}footer a:hover{color:var(--fg)}
+</style>
+</head><body>
+<div class="bgfx" aria-hidden="true"></div>
+<header class="top"><nav class="main wrap" aria-label="Main">
+<a class="brand" href="/"><img src="/assets/logo-white-256.webp" alt="" width="36" height="36">Shadinota Tech</a>
+<div class="links"><a href="/#apps">Apps</a><a href="/cardcraft/">CardCraft</a><a href="/blog/" class="on">Blog</a><a href="/#contact">Contact</a></div>
+<a class="btn" style="min-height:40px;padding:8px 16px;font-size:14px" href="https://play.google.com/store/apps/details?id=com.shadinota.smartid&referrer=utm_source%3Dblog%26utm_medium%3Darticle" target="_blank" rel="noopener">Get CardCraft</a>
+</nav></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Workflows</nav>
+<header class="post-head"><span class="cat">Workflows</span>
+<h1 class="h">ID Cards from Excel Data: Prepare, Import and Bulk Print</h1>
+<p class="lede">Make ID cards from Excel data without retyping: the column layout, formulas that catch errors, photo file naming, CSV UTF-8 for Bangla and bulk printing steps.</p>
+<div class="meta"><span>By Shadinota Tech Team</span><span><time datetime="2026-11-23">23 November 2026</time></span><span>12 min read</span></div></header>
+<div class="layout">
+<article class="prose"><div class="keytakeaways">
+<p><b>Key takeaways</b></p>
+<ul>
+<li>Making ID cards from Excel data works when the sheet is <strong>one header row, one row per person, one column per card field</strong>, with no merged cells, blank rows or totals.</li>
+<li>Store <strong>ID numbers and phone numbers as text</strong>. Excel drops leading zeros (<code>0045</code> becomes <code>45</code>, <code>01712…</code> loses its <code>0</code>) and shows long numbers in scientific notation.</li>
+<li>Name every photo after the person's <strong>ID number</strong> (<code>S-2027-0045.jpg</code>), not their name. IDs are unique; names repeat and get misspelled.</li>
+<li>Save as <strong>CSV UTF-8</strong> if any field is in Bangla; a plain CSV can turn it into question marks.</li>
+<li>Run a five-minute check (duplicates, empty cells, over-long names, missing photos) before you import. Fixing 3 rows in a sheet beats reprinting 30 cards.</li>
+</ul>
+</div>
+<p>If you have a staff or student list in a spreadsheet, you should never type it again into an ID card designer. Making ID cards from Excel data is faster and far more accurate, but only if the sheet is clean before it goes in.</p>
+<p>This guide shows the exact column layout, the Excel formulas that catch problems, how to name photos so they match the right person, and the steps from import to a printed A4 stack. It works the same in Excel, Google Sheets or a phone spreadsheet app.</p>
+<h2 id="why-import-instead-of-typing">Why import instead of typing?</h2>
+<p>Retyping names on a phone keyboard is where most card errors start, and every typo is a reprint. A spreadsheet also usually exists already: HR has the payroll list, the school office has the admission register, the event team has the registration export.</p>
+<p>Importing gives you three things typing does not:</p>
+<ol>
+<li><strong>One source of truth.</strong> The card shows exactly what is in the official list, so the spelling on the card matches the spelling in the register.</li>
+<li><strong>Proofreading at a glance.</strong> Scanning a column of 400 names on a computer screen is much easier than flicking through 400 card previews.</li>
+<li><strong>Reuse next year.</strong> Change the class column and the validity date, re-import, and the renewal batch is ready.</li>
+</ol>
+<h2 id="how-should-the-spreadsheet-be-laid-out">How should the spreadsheet be laid out?</h2>
+<p>Every bulk ID card tool, from Word mail merge to a mobile app, reads a sheet the same way: the first row is the column names and every row below it is one card. Anything else in the sheet confuses the import.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Example</th>
+<th>Keep it as</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID number</td>
+<td><code>S-2027-0045</code></td>
+<td>Text</td>
+<td>Unique key for photo matching; leading zeros must survive</td>
+</tr>
+<tr>
+<td>Full name</td>
+<td><code>Nusrat Jahan</code></td>
+<td>Text, trimmed</td>
+<td>Exactly as it should print; no double spaces</td>
+</tr>
+<tr>
+<td>Name (Bangla)</td>
+<td><code>নুসরাত জাহান</code></td>
+<td>Text, saved as UTF-8</td>
+<td>Only if the card is bilingual</td>
+</tr>
+<tr>
+<td>Designation / Class</td>
+<td><code>Class 7</code></td>
+<td>Text</td>
+<td>Keep one spelling per value (<code>Class 7</code>, not also <code>VII</code>)</td>
+</tr>
+<tr>
+<td>Department / Section</td>
+<td><code>B</code></td>
+<td>Text</td>
+<td>Short values fit better on CR80</td>
+</tr>
+<tr>
+<td>Blood group</td>
+<td><code>O+</code></td>
+<td>Text from a fixed list</td>
+<td>Pick from 8 values only: A+, A−, B+, B−, AB+, AB−, O+, O−</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td><code>01712345678</code></td>
+<td>Text</td>
+<td>Excel removes the leading <code>0</code> from numbers</td>
+</tr>
+<tr>
+<td>Valid until</td>
+<td><code>31-12-2027</code></td>
+<td>One date format for the whole column</td>
+<td>Mixed formats import as wrong dates</td>
+</tr>
+<tr>
+<td>Photo file</td>
+<td><code>S-2027-0045.jpg</code></td>
+<td>Text (formula)</td>
+<td>Tells you which photo belongs to the row</td>
+</tr>
+</tbody>
+</table>
+<p>Rules that save the most trouble:</p>
+<ul>
+<li><strong>One header row only.</strong> No school name banner in row 1, no logo, no title. Put those in the card design instead.</li>
+<li><strong>No merged cells, no blank rows, no subtotal rows.</strong> A blank row often ends the import early; a merged cell shifts data into the wrong column.</li>
+<li><strong>Short, plain column names</strong> like <code>Name</code>, <code>ID</code>, <code>Class</code>. Avoid line breaks inside header cells.</li>
+<li><strong>One sheet per card type.</strong> Staff and students usually have different fields; keep them in separate files.</li>
+</ul>
+<blockquote>
+<p><strong>Tip:</strong> If your card tool can export its own list, add one person by hand, export, and use that file as your template. The columns are then in exactly the order the tool expects.</p>
+</blockquote>
+<h2 id="how-do-you-stop-excel-breaking-id-and-phone-numbers">How do you stop Excel breaking ID and phone numbers?</h2>
+<p>This is the most common reason bulk cards come out wrong. Excel treats anything that looks like a number as a number, so:</p>
+<ul>
+<li><code>0045</code> becomes <code>45</code>.</li>
+<li>A Bangladesh mobile number <code>01712345678</code> becomes <code>1712345678</code>.</li>
+<li>With the country code, <code>8801712345678</code> (13 digits) may display as <code>8.80171E+12</code>.</li>
+<li>Anything over 15 digits, such as some long registration numbers, loses its final digits for good: Excel keeps only 15 significant digits and turns the rest into zeros. Microsoft documents this in <a href="https://support.microsoft.com/en-us/office/keep-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7">Keeping leading zeros and large numbers</a>.</li>
+</ul>
+<p>Fix it <strong>before</strong> you paste or type the data:</p>
+<ol>
+<li>Select the ID and phone columns.</li>
+<li>Right-click → <strong>Format Cells</strong> → <strong>Text</strong> → OK.</li>
+<li>Now paste or type the values. Already-damaged numbers will not come back by changing the format; re-paste them from the original source.</li>
+</ol>
+<p>For a single cell you can also type an apostrophe first (<code>'0045</code>). If your IDs are plain serial numbers and you only need padding, a helper column with <code>=TEXT(A2,"0000")</code> turns <code>45</code> into <code>0045</code>; copy it and use <strong>Paste Special → Values</strong> to make it permanent.</p>
+<h2 id="how-should-you-name-the-photos">How should you name the photos?</h2>
+<p>Photos are the part of a bulk job that goes wrong silently: the card prints fine, just with the wrong face. Use a naming rule that cannot be confused.</p>
+<ul>
+<li><strong>Name each photo after the ID number</strong>, e.g. <code>S-2027-0045.jpg</code>. Two students can both be called Mohammad Rahim; they cannot share an ID.</li>
+<li>Use <strong>only letters, numbers and hyphens</strong> in file names. No spaces, no Bangla characters, no brackets.</li>
+<li>Keep <strong>one file type</strong> (JPG is fine) and keep the extension lowercase so <code>.JPG</code> and <code>.jpg</code> do not count as different files.</li>
+<li>Put all photos for one batch in <strong>one folder</strong>.</li>
+</ul>
+<p>Add a formula column so the sheet itself says which photo each row needs:</p>
+<pre><code>=A2&amp;&quot;.jpg&quot;
+</code></pre>
+<p>Then, if you can see the folder listing on a computer, paste the file names into another sheet and check each row with <code>=IF(COUNTIF(Photos!A:A,I2)=0,"MISSING","")</code>. Every "MISSING" is a person to photograph before print day. Our guide to <a href="/blog/how-to-take-id-card-photo-with-phone/">taking ID card photos with a phone</a> covers how to run a fast photo session so the gaps get filled in one go.</p>
+<figure>
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flow: spreadsheet row with ID S-2027-0045 matches photo file S-2027-0045.jpg, which produces one ID card, then an A4 sheet of 10 cards">
+<rect width="640" height="230" fill="#0f0f12"/>
+<g font-family="Inter,sans-serif" font-size="12" fill="#e4e4e7">
+<rect x="20" y="40" width="170" height="120" rx="6" fill="#18181b" stroke="#4fe3c1"/>
+<text x="105" y="30" text-anchor="middle" fill="#a1a1aa">1. Spreadsheet row</text>
+<text x="32" y="66" fill="#4fe3c1">ID</text><text x="80" y="66">S-2027-0045</text>
+<text x="32" y="90" fill="#4fe3c1">Name</text><text x="80" y="90">Nusrat Jahan</text>
+<text x="32" y="114" fill="#4fe3c1">Class</text><text x="80" y="114">7 · B</text>
+<text x="32" y="138" fill="#4fe3c1">Photo</text><text x="80" y="138">S-2027-0045.jpg</text>
+<rect x="225" y="55" width="90" height="90" rx="6" fill="#18181b" stroke="#8b9cff"/>
+<circle cx="270" cy="88" r="16" fill="#8b9cff" fill-opacity=".8"/><rect x="245" y="108" width="50" height="26" rx="13" fill="#8b9cff" fill-opacity=".8"/>
+<text x="270" y="30" text-anchor="middle" fill="#a1a1aa">2. Photo by ID</text>
+<text x="270" y="168" text-anchor="middle" font-size="11">S-2027-0045.jpg</text>
+<rect x="350" y="57" width="128" height="81" rx="5" fill="#f4f4f5"/>
+<rect x="350" y="57" width="128" height="18" rx="5" fill="#4fe3c1"/><rect x="360" y="84" width="30" height="38" rx="2" fill="#8b9cff"/>
+<rect x="398" y="88" width="66" height="7" fill="#3f3f46"/><rect x="398" y="102" width="46" height="5" fill="#71717a"/><rect x="398" y="113" width="56" height="5" fill="#71717a"/>
+<text x="414" y="30" text-anchor="middle" fill="#a1a1aa">3. One card</text>
+<g transform="translate(520,22)">
+<rect width="100" height="141" fill="#f4f4f5" rx="2"/>
+<g fill="#4fe3c1" fill-opacity=".85">
+<rect x="8" y="4" width="40.8" height="25.7" rx="1.5"/><rect x="51" y="4" width="40.8" height="25.7" rx="1.5"/>
+<rect x="8" y="31" width="40.8" height="25.7" rx="1.5"/><rect x="51" y="31" width="40.8" height="25.7" rx="1.5"/>
+<rect x="8" y="58" width="40.8" height="25.7" rx="1.5"/><rect x="51" y="58" width="40.8" height="25.7" rx="1.5"/>
+<rect x="8" y="85" width="40.8" height="25.7" rx="1.5"/><rect x="51" y="85" width="40.8" height="25.7" rx="1.5"/>
+<rect x="8" y="112" width="40.8" height="25.7" rx="1.5"/><rect x="51" y="112" width="40.8" height="25.7" rx="1.5"/>
+</g>
+<text x="50" y="160" text-anchor="middle" fill="#a1a1aa">4. A4 × 10</text>
+</g>
+<g stroke="#a1a1aa" stroke-width="1.5" fill="none"><path d="M192 100h28"/><path d="M318 100h28"/><path d="M481 100h34"/></g>
+<text x="320" y="210" text-anchor="middle" fill="#a1a1aa" font-size="11">The ID number is the key that ties the row, the photo and the printed card together.</text>
+</g>
+</svg>
+<figcaption>The ID number links each spreadsheet row to its photo and its card. The A4 sheet is drawn to scale.</figcaption>
+</figure>
+
+<h2 id="five-minute-data-check-before-you-import">Five-minute data check before you import</h2>
+<p>Run these on a copy of the sheet. Each one takes a few seconds and catches a whole class of reprints. They work the same in Google Sheets.</p>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Formula (row 2, copy down)</th>
+<th>What it catches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Duplicate ID</td>
+<td><code>=IF(COUNTIF(A:A,A2)&gt;1,"DUP","")</code></td>
+<td>Two people with one number, or one person entered twice</td>
+</tr>
+<tr>
+<td>Extra spaces</td>
+<td><code>=IF(B2&lt;&gt;TRIM(B2),"SPACES","")</code></td>
+<td>Double spaces and trailing spaces that shift centred text</td>
+</tr>
+<tr>
+<td>Empty required field</td>
+<td><code>=IF(COUNTBLANK(A2:D2)&gt;0,"EMPTY","")</code></td>
+<td>Rows missing an ID, name, class or section</td>
+</tr>
+<tr>
+<td>Name too long</td>
+<td><code>=IF(LEN(B2)&gt;26,"LONG","")</code></td>
+<td>Names that will shrink or wrap on a CR80 card</td>
+</tr>
+<tr>
+<td>Bad blood group</td>
+<td><code>=IF(COUNTIF($L$2:$L$9,F2)=0,"CHECK","")</code></td>
+<td><code>O +</code>, <code>o+</code>, <code>0+</code> and other variants (list the 8 valid values in L2:L9)</td>
+</tr>
+</tbody>
+</table>
+<p>Then use <strong>Data → Filter</strong> on each helper column to see only the flagged rows. The 26-character limit is a rule of thumb for one line of name text across a landscape CR80 card at a readable size; check your own template, since a portrait layout fits fewer characters.</p>
+<p>Two more habits that help:</p>
+<ul>
+<li>Use <strong>Data → Data Validation → List</strong> for fields with fixed values (class, section, blood group, department). People then pick from a dropdown instead of typing a new spelling.</li>
+<li><strong>Sort</strong> by class, section or department just before saving. Cards print in that order, which makes handing them out much faster.</li>
+</ul>
+<h2 id="save-in-the-right-format-xlsx-or-csv-utf-8">Save in the right format: XLSX or CSV UTF-8</h2>
+<p>Most tools accept either an Excel file (<code>.xlsx</code>) or a CSV. If you use CSV, the encoding matters.</p>
+<ul>
+<li>In Excel, choose <strong>File → Save As → CSV UTF-8 (Comma delimited)</strong>. The older plain "CSV (Comma delimited)" option can replace Bangla, Arabic or accented characters with question marks.</li>
+<li>Google Sheets exports CSV as UTF-8 by default (<strong>File → Download → Comma-separated values</strong>).</li>
+<li>Open the saved CSV once in a text editor or re-open it to make sure the Bangla names still read correctly.</li>
+<li>Remember that a CSV stores only values. The leading zeros survive only if the cells were text before saving, and re-opening the CSV in Excel and saving again can strip them, so make the CSV the last step.</li>
+</ul>
+<h2 id="importing-and-printing-the-step-by-step">Importing and printing: the step-by-step</h2>
+<p>Here is the full run for a typical batch, whatever tool you use.</p>
+<ol>
+<li><strong>Freeze the data.</strong> Agree with HR or the office that this copy is final for this batch. Late changes go in a "next batch" sheet.</li>
+<li><strong>Run the five checks</strong> above and fix every flagged row.</li>
+<li><strong>Save</strong> as XLSX or CSV UTF-8 and copy the file and the photo folder to the device you will design on.</li>
+<li><strong>Import the list</strong> and look at the first and last few people. If names appear in the ID column, the column mapping is off; fix it before going further.</li>
+<li><strong>Add the photos</strong> in bulk, then look for anyone still without a photo.</li>
+<li><strong>Proof a sample</strong>: one long name, one short name, one person from each department or class, and every role that uses a different colour.</li>
+<li><strong>Export a 300 DPI PDF</strong> of A4 sheets with cut marks and print one test sheet at 100% scale. Measure a card: it should be 85.6 × 54 mm. Our guide to <a href="/blog/how-to-print-id-cards-on-a4-paper/">printing ID cards on A4 paper</a> covers scaling, duplex alignment and cutting.</li>
+<li><strong>Print the batch</strong>, cut, and tick names off the sheet as cards are handed out.</li>
+<li><strong>Save the final list</strong> (export it) with the batch date, so next year's renewal starts from clean data.</li>
+</ol>
+<p>In <a href="/cardcraft/">CardCraft</a>, step 4 is importing an Excel or CSV file, step 5 is adding photos one by one or in bulk, and the dashboard shows who still has no photo and whose card expires within 30 days. You can export the list again at any time, which covers step 9.</p>
+<h2 id="other-ways-to-turn-excel-into-id-cards">Other ways to turn Excel into ID cards</h2>
+<p>The method above uses a dedicated ID card tool. Two desktop routes are also common:</p>
+<ul>
+<li><strong>Word mail merge.</strong> Fine for text-only badges: set up a label sheet, connect the Excel list and insert merge fields. Photos are harder: Word needs a nested <code>INCLUDEPICTURE</code> field that points to each image's full file path, and the pictures often need a manual refresh (F9) before they show. See Microsoft's notes on the <a href="https://support.microsoft.com/en-au/word/field-codes-includepicture-field">IncludePicture field</a>.</li>
+<li><strong>Design software data merge</strong> (InDesign, Illustrator variables, Inkscape extensions, Canva-style bulk create). Powerful if you already use the software, but you set the card size, bleed and A4 imposition yourself.</li>
+</ul>
+<p>All routes need the same clean sheet.</p>
+<h2 id="worked-example-412-factory-workers-in-one-afternoon">Worked example: 412 factory workers in one afternoon</h2>
+<p>A garment factory HR officer has a payroll export with 412 workers. Here is how the batch goes from export to print.</p>
+<ol>
+<li>The export has a company banner in rows 1–3 and a total at the bottom. She deletes them, keeping one header row.</li>
+<li>Worker numbers like <code>00871</code> had already lost their zeros. She formats the column as Text and re-pastes from the payroll system.</li>
+<li>The duplicate check flags 2 rows: one worker entered twice after a transfer between lines. One row is deleted, leaving 411.</li>
+<li>Blood group values include <code>B +</code>, <code>b+</code> and blanks. She sets a dropdown, fixes 37 cells and leaves 6 blanks for workers who do not know theirs, then checks how her template shows an empty field.</li>
+<li>Photo check: 388 of 411 photos exist; 23 workers are photographed at the gate next morning.</li>
+<li>Sorted by section and line, saved as CSV UTF-8 because section names include Bangla.</li>
+</ol>
+<p>At 10 landscape cards per A4 sheet, 411 cards need 42 sheets (41 full sheets plus one with a single card). With a test sheet and a few spares, 45 sheets of card stock is a sensible order.</p>
+<h2 id="checklist-is-your-sheet-ready">Checklist: is your sheet ready?</h2>
+<ul>
+<li>One header row, one row per person, no merged cells or blank rows</li>
+<li>ID and phone columns formatted as Text, leading zeros visible</li>
+<li>No duplicate IDs (COUNTIF check is clean)</li>
+<li>No extra spaces in names (TRIM check is clean)</li>
+<li>Fixed-value fields use one spelling each</li>
+<li>Every row has a photo named <code>&lt;ID&gt;.jpg</code>, or the gaps are listed</li>
+<li>Long names reviewed against your template</li>
+<li>Saved as XLSX or CSV UTF-8, Bangla text checked</li>
+<li>Sorted in the order you will hand cards out</li>
+<li>A dated copy kept for next year's renewal</li>
+</ul>
+<aside class="cta" aria-label="CardCraft app">
+<img src="/assets/cc-icon.webp" alt="CardCraft icon" width="72" height="72" loading="lazy">
+<div><h3 class="h">Make these ID cards on your phone</h3>
+<p>CardCraft has 185 templates, Excel/CSV import, bulk photos and print-ready A4 sheets with cut marks at 300 DPI. Free to start, works offline.</p>
+<a class="btn pri" href="https://play.google.com/store/apps/details?id=com.shadinota.smartid&referrer=utm_source%3Dblog%26utm_medium%3Darticle" target="_blank" rel="noopener">Get CardCraft on Google Play</a></div></aside>
+
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="how-do-i-make-id-cards-from-an-excel-list">How do I make ID cards from an Excel list?</h3>
+<p>Clean the sheet first: one header row, one row per person, ID and phone columns stored as text. Save it as XLSX or CSV UTF-8, import it into an ID card maker or a Word mail merge, add photos named by ID number, proof a sample and print 300 DPI A4 sheets at 100% scale.</p>
+<h3 id="can-i-add-photos-to-id-cards-automatically-from-excel">Can I add photos to ID cards automatically from Excel?</h3>
+<p>Excel itself does not hold photos for a merge; it holds the file names. Name each photo after the person's ID number and keep all photos in one folder, then use a tool that adds photos in bulk or a Word <code>INCLUDEPICTURE</code> field that points to each file. Check for missing photos before printing.</p>
+<h3 id="why-does-excel-remove-the-zero-from-my-id-numbers">Why does Excel remove the zero from my ID numbers?</h3>
+<p>Excel treats <code>0045</code> as the number 45 and drops the leading zero. Format the column as Text before you enter or paste the data, or type an apostrophe before the value. Phone numbers such as <code>01712345678</code> need the same treatment.</p>
+<h3 id="should-i-use-csv-or-xlsx-for-id-card-import">Should I use CSV or XLSX for ID card import?</h3>
+<p>Either works if your tool accepts it. XLSX keeps text formatting more reliably, while CSV is simpler and accepted almost everywhere. If you use CSV and any names are in Bangla or another non-Latin script, save as CSV UTF-8, or the text may turn into question marks.</p>
+<h3 id="how-many-id-cards-can-i-print-from-one-excel-sheet">How many ID cards can I print from one Excel sheet?</h3>
+<p>There is no fixed limit in the spreadsheet itself; the limit is your tool and your printer. Plan paper by dividing the number of people by cards per sheet: at 10 CR80 cards per A4 sheet, 400 people need 40 sheets, plus a few for tests and reprints.</p>
+
+<div class="author"><img src="/assets/logo-white-256.webp" alt="" width="52" height="52"><div><b>Shadinota Tech Team</b>We build CardCraft – ID Card Maker in Khulna, Bangladesh, and help schools, offices and print shops make and print ID cards every day.</div></div>
+</article>
+<aside class="toc" aria-label="On this page"><b>On this page</b><a href="#why-import-instead-of-typing">Why import instead of typing?</a><a href="#how-should-the-spreadsheet-be-laid-out">How should the spreadsheet be laid out?</a><a href="#how-do-you-stop-excel-breaking-id-and-phone-numbers">How do you stop Excel breaking ID and phone numbers?</a><a href="#how-should-you-name-the-photos">How should you name the photos?</a><a href="#five-minute-data-check-before-you-import">Five-minute data check before you import</a><a href="#save-in-the-right-format-xlsx-or-csv-utf-8">Save in the right format: XLSX or CSV UTF-8</a><a href="#importing-and-printing-the-step-by-step">Importing and printing: the step-by-step</a><a href="#other-ways-to-turn-excel-into-id-cards">Other ways to turn Excel into ID cards</a><a href="#worked-example-412-factory-workers-in-one-afternoon">Worked example: 412 factory workers in one afternoon</a><a href="#checklist-is-your-sheet-ready">Checklist: is your sheet ready?</a><a href="#frequently-asked-questions">Frequently asked questions</a>
+<div class="side-cta"><p>Make and print ID cards from your phone.</p><a class="btn pri" style="width:100%;min-height:40px;font-size:14px" href="https://play.google.com/store/apps/details?id=com.shadinota.smartid&referrer=utm_source%3Dblog%26utm_medium%3Darticle" target="_blank" rel="noopener">Get CardCraft</a></div></aside>
+</div>
+<section class="related"><h2 class="h">Keep reading</h2><div class="grid"><a class="pcard" href="/blog/pvc-id-card-printing-at-home/">
+<img src="/blog/pvc-id-card-printing-at-home/og.png" alt="" loading="lazy" width="1200" height="630">
+<div class="pb"><span class="c">Printing</span><h3 class="h">PVC ID Card Printing at Home: 4 Methods, Costs and Steps</h3>
+<p>PVC ID card printing without a card printer: inkjet PVC cards, A4 PVC sheet sets and laminated paper compared, with Bangladesh prices, cost per card and steps.</p><span class="d">22 November 2026 · 13 min read</span></div></a><a class="pcard" href="/blog/what-to-put-on-the-back-of-an-id-card/">
+<img src="/blog/what-to-put-on-the-back-of-an-id-card/og.png" alt="" loading="lazy" width="1200" height="630">
+<div class="pb"><span class="c">Design</span><h3 class="h">Back Side of ID Card: What to Write, With Ready-to-Copy Text</h3>
+<p>What to put on the back side of an ID card: six blocks in priority order, ready-to-copy English and Bangla text for each card type, and a to-scale layout.</p><span class="d">21 November 2026 · 14 min read</span></div></a><a class="pcard" href="/blog/how-to-take-id-card-photo-with-phone/">
+<img src="/blog/how-to-take-id-card-photo-with-phone/og.png" alt="" loading="lazy" width="1200" height="630">
+<div class="pb"><span class="c">Photos</span><h3 class="h">How to Take an ID Card Photo on Your Phone: Setup and Size</h3>
+<p>How to take an ID card photo with a phone: plain background, window light, the right distance and framing, exact crop sizes in mm and pixels, and a photo-day plan.</p><span class="d">20 November 2026 · 12 min read</span></div></a></div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 Shadinota Tech, Khulna, Bangladesh</span>
+<span><a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/cardcraft/">CardCraft</a> · <a href="/privacy.html">Privacy</a> · <a href="/blog/feed.xml">RSS</a></span></div></footer>
+</body></html>

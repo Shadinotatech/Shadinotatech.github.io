@@ -3,7 +3,7 @@ title: How to Make ID Cards on Mobile: The Complete Phone Workflow
 description: How to make ID cards on mobile from start to finish: plan the fields, collect data and photos, pick a template, check every card and print A4 sheets at 300 DPI.
 slug: how-to-make-id-cards-on-your-phone
 date: 2026-11-17
-updated: 2026-11-20
+updated: 2026-11-23
 category: Guides
 keywords: how to make id card on mobile, id card maker app, id card maker for android, make id card with photo on phone, print id card from phone, bulk id cards on phone
 ---
@@ -102,7 +102,7 @@ For five or ten people, typing on the phone is fine. For a class of 60 or a fact
 - Use one date format for the whole column, for example `31-12-2027`.
 - If names are in Bangla, save as **CSV UTF-8** from Excel (File → Save As → "CSV UTF-8 (Comma delimited)"). A plain CSV can turn Bangla text into question marks.
 
-You can build the sheet in Excel or Google Sheets on a computer, or in the Sheets app on the same phone, then import the file. A reliable trick: add one person by hand in the app, **export** the list, and use that exported file as your template. The column order then matches what the app expects.
+You can build the sheet in Excel or Google Sheets on a computer, or in the Sheets app on the same phone, then import the file. A reliable trick: add one person by hand in the app, **export** the list, and use that exported file as your template. The column order then matches what the app expects. For formulas that catch duplicates, missing photos and over-long names before import, see our guide to [making ID cards from Excel data](/blog/make-id-cards-from-excel-list/).
 
 > **Tip:** Sort the sheet by class or department before importing. Cards then print in the same order you will hand them out, which makes distribution day much faster.
 

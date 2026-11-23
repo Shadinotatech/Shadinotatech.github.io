@@ -121,7 +121,7 @@
     },
     {
       "n": 9,
-      "status": "todo",
+      "status": "published",
       "slug": "make-id-cards-from-excel-list",
       "primary": "id card from excel data",
       "secondary": [
@@ -130,7 +130,8 @@
         "mass id card printing"
       ],
       "intent": "how-to",
-      "angle": "Preparing a clean spreadsheet (column names, ID numbers, photo filenames), import, bulk photos, checking errors."
+      "angle": "Preparing a clean spreadsheet (column names, ID numbers, photo filenames), import, bulk photos, checking errors.",
+      "published": "2026-11-23"
     },
     {
       "n": 10,

@@ -27,7 +27,8 @@ SRC = ROOT / "_blog" / "posts"
 OUT = ROOT / "blog"
 SITE = "https://shadinotatech.com"
 PLAY = "https://play.google.com/store/apps/details?id=com.shadinota.smartid&referrer=utm_source%3Dblog%26utm_medium%3Darticle"
-AUTHOR = "Shadinota Tech Team"
+AUTHOR = "Md. Ruhul Amin"
+AUTHOR_ROLE = "Founder of Shadinota Tech and developer of CardCraft – ID Card Maker"
 
 STATIC_PAGES = [
     ("/", "weekly", "1.0"),
@@ -285,7 +286,7 @@ def post_page(p, related):
         "@context": "https://schema.org", "@type": "BlogPosting",
         "headline": p["title"], "description": p["description"],
         "image": og, "datePublished": p["date"], "dateModified": p["updated"],
-        "author": {"@type": "Organization", "name": AUTHOR, "url": SITE + "/"},
+        "author": {"@type": "Person", "name": AUTHOR, "jobTitle": AUTHOR_ROLE, "url": SITE + "/", "worksFor": {"@type": "Organization", "name": "Shadinota Tech", "url": SITE + "/"}},
         "publisher": {"@type": "Organization", "name": "Shadinota Tech", "logo": {"@type": "ImageObject", "url": SITE + "/assets/icon-v2-512.png"}},
         "mainEntityOfPage": url, "keywords": ", ".join(p["keywords"]), "wordCount": p["words"], "inLanguage": "en",
     }, {
@@ -312,7 +313,7 @@ def post_page(p, related):
 <div class="layout">
 <article class="prose">{body}
 {CTA_HTML if '<aside class="cta"' not in body else ''}
-<div class="author"><img src="/assets/logo-white-256.webp" alt="" width="52" height="52"><div><b>{AUTHOR}</b>We build CardCraft – ID Card Maker in Khulna, Bangladesh, and help schools, offices and print shops make and print ID cards every day.</div></div>
+<div class="author"><img src="/assets/logo-white-256.webp" alt="" width="52" height="52"><div><b>{AUTHOR}</b>Founder of Shadinota Tech and developer of CardCraft – ID Card Maker. He builds tools in Khulna, Bangladesh, that help schools, offices and print shops make and print ID cards every day.</div></div>
 </article>
 <aside class="toc" aria-label="On this page"><b>On this page</b>{toc}
 <div class="side-cta"><p>Make and print ID cards from your phone.</p><a class="btn pri" style="width:100%;min-height:40px;font-size:14px" href="{PLAY}" target="_blank" rel="noopener">Get CardCraft</a></div></aside>

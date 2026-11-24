@@ -3,6 +3,7 @@ title: ID Card Size in Pixels, mm and Inches (CR80 and Every Badge Size)
 description: The exact ID card size in pixels at 300 and 600 DPI, plus CR80, CR79 and CR100 in mm and inches, bleed, safe zone, thickness and badge sizes in one table.
 slug: id-card-size-cr80-mm-inches-pixels
 date: 2026-11-16
+updated: 2026-11-24
 category: Design
 keywords: id card size in pixels, cr80 card size, standard id card size in mm, id card size 300 dpi, cr79 cr100 size, id card bleed and safe zone
 ---
@@ -77,7 +78,7 @@ A few notes on the less common sizes:
 
 - **CR79** exists because thick proximity cards (the kind used for door access) are hard to print on directly. You print a slightly smaller adhesive card and stick it on, so it does not overhang the edges.
 - **CR100** is about 42% larger in area than CR80. Many desktop card printers cannot feed it, so check before you design for it.
-- **3R, 4R and A6** are paper sizes rather than card sizes, but they are very common for event passes because any photo lab or print shop can print them. In Bangladesh, 3R and 4R are everyday photo-print sizes at local studios.
+- **3R, 4R and A6** are paper sizes rather than card sizes, but they are very common for event passes because any photo lab or print shop can print them. In Bangladesh, 3R and 4R are everyday photo-print sizes at local studios. For name font sizes, role colours and QR placement on these formats, see our [event badge design guide](/blog/event-badge-design-and-sizes/).
 
 ## Bleed, trim and safe zone: what they mean and how big they are
 

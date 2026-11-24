@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel><title>Shadinota Tech Blog</title><link>https://shadinotatech.com/blog/</link>
 <description>ID card guides and tips from the team behind CardCraft.</description><language>en</language>
+<item><title>Event Badge Design: Sizes, Font Sizes and a Layout That Works</title><link>https://shadinotatech.com/blog/event-badge-design-and-sizes/</link><guid>https://shadinotatech.com/blog/event-badge-design-and-sizes/</guid>
+<pubDate>Tue, 24 Nov 2026 06:00:00 +0600</pubDate><description>Event badge design that people can read across a room: badge sizes in mm and inches, name font sizes, colour-coded roles, QR check-in and A4 print layouts.</description></item>
 <item><title>ID Cards from Excel Data: Prepare, Import and Bulk Print</title><link>https://shadinotatech.com/blog/make-id-cards-from-excel-list/</link><guid>https://shadinotatech.com/blog/make-id-cards-from-excel-list/</guid>
 <pubDate>Mon, 23 Nov 2026 06:00:00 +0600</pubDate><description>Make ID cards from Excel data without retyping: the column layout, formulas that catch errors, photo file naming, CSV UTF-8 for Bangla and bulk printing steps.</description></item>
 <item><title>PVC ID Card Printing at Home: 4 Methods, Costs and Steps</title><link>https://shadinotatech.com/blog/pvc-id-card-printing-at-home/</link><guid>https://shadinotatech.com/blog/pvc-id-card-printing-at-home/</guid>

@@ -1,464 +1,467 @@
 {
-  "_about": "Keyword plan for the shadinotatech.com blog (CardCraft – ID Card Maker cluster). Research: 2026-11-15. Head terms like 'id card maker' are dominated by big tool pages (Canva, Fotor, Kittl, Pixlr), so the plan targets long-tail, practical 'how to' and spec queries where real product experience (A4 print sheets, 300 DPI, bulk Excel import, Bangladesh print market) gives an edge. Publish in order; set status to 'published' with the date and slug when done. Pillar = how-to-make-id-cards-on-your-phone; every cluster post links to the pillar and to 1-2 siblings.",
-  "posts": [
-    {
-      "n": 1,
-      "status": "published",
-      "slug": "how-to-print-id-cards-on-a4-paper",
-      "primary": "how to print id cards on a4 paper",
-      "secondary": [
-        "how many id cards on a4 sheet",
-        "print id card at home",
-        "id card a4 layout",
-        "duplex id card printing"
-      ],
-      "intent": "how-to",
-      "angle": "Exact A4 math for CR80 (10-up vs 8-up), margins, cut marks, 100% scale, front/back alignment, paper/PVC sheet choices, cutting. Diagram of A4 layout.",
-      "published": "2026-11-15"
-    },
-    {
-      "n": 2,
-      "status": "published",
-      "slug": "id-card-size-cr80-mm-inches-pixels",
-      "primary": "id card size in pixels",
-      "secondary": [
-        "cr80 card size",
-        "standard id card size in mm",
-        "id card size 300 dpi",
-        "cr79 cr100 size"
-      ],
-      "intent": "reference",
-      "angle": "One definitive size table (mm/in/px at 300 and 600 DPI), corner radius, thickness, bleed and safe zone, portrait vs landscape, badge sizes (4x3, 3R, 4R, A6).",
-      "published": "2026-11-16"
-    },
-    {
-      "n": 3,
-      "status": "published",
-      "slug": "how-to-make-id-cards-on-your-phone",
-      "primary": "how to make id card on mobile",
-      "secondary": [
-        "id card maker app",
-        "id card maker for android",
-        "make id card with photo on phone"
-      ],
-      "intent": "pillar how-to",
-      "angle": "PILLAR. End-to-end workflow on a phone: plan fields, photos, template, data import, print/export, quality checks. Links to every cluster post.",
-      "published": "2026-11-17"
-    },
-    {
-      "n": 4,
-      "status": "published",
-      "slug": "employee-id-card-design-what-to-include",
-      "primary": "employee id card design",
-      "secondary": [
-        "what to include on employee id card",
-        "staff id card format",
-        "office id card"
-      ],
-      "intent": "how-to",
-      "angle": "Front vs back field checklist, hierarchy, privacy (what NOT to print), examples by company size.",
-      "published": "2026-11-18"
-    },
-    {
-      "n": 5,
-      "status": "published",
-      "slug": "school-id-card-design-guide",
-      "primary": "school id card design",
-      "secondary": [
-        "student id card format",
-        "student id card template",
-        "madrasa id card"
-      ],
-      "intent": "how-to",
-      "angle": "Fields for students (class, section, roll, guardian phone, blood group), age-appropriate privacy, yearly renewal workflow for schools and madrasas.",
-      "published": "2026-11-19"
-    },
-    {
-      "n": 6,
-      "status": "published",
-      "slug": "how-to-take-id-card-photo-with-phone",
-      "primary": "how to take id card photo",
-      "secondary": [
-        "id card photo background",
-        "id photo tips",
-        "passport size photo for id card"
-      ],
-      "intent": "how-to",
-      "angle": "Lighting, plain background, framing, head size ratio, batch photo day for a whole school/office, common rejects.",
-      "published": "2026-11-20"
-    },
-    {
-      "n": 7,
-      "status": "published",
-      "slug": "what-to-put-on-the-back-of-an-id-card",
-      "primary": "back side of id card",
-      "secondary": [
-        "id card back design",
-        "id card back side text",
-        "if found return id card text",
-        "id card terms and conditions",
-        "id card back side in bangla"
-      ],
-      "intent": "how-to",
-      "angle": "Ready-to-copy back-side text blocks (if found, terms, emergency, validity), layout tips.",
-      "published": "2026-11-21"
-    },
-    {
-      "n": 8,
-      "status": "published",
-      "slug": "pvc-id-card-printing-at-home",
-      "primary": "pvc id card printing",
-      "secondary": [
-        "inkjet pvc card",
-        "a4 pvc sheet id card",
-        "pvc id card price in bangladesh",
-        "pvc id card printing at home",
-        "dragon sheet id card"
-      ],
-      "intent": "how-to/commercial",
-      "angle": "Inkjet PVC cards vs A4 PVC/'dragon' sheets vs laminated paper vs card printers; cost per card; Bangladesh price ranges.",
-      "published": "2026-11-22"
-    },
-    {
-      "n": 9,
-      "status": "published",
-      "slug": "make-id-cards-from-excel-list",
-      "primary": "id card from excel data",
-      "secondary": [
-        "bulk id card maker",
-        "id card csv import",
-        "mass id card printing"
-      ],
-      "intent": "how-to",
-      "angle": "Preparing a clean spreadsheet (column names, ID numbers, photo filenames), import, bulk photos, checking errors.",
-      "published": "2026-11-23"
-    },
-    {
-      "n": 10,
-      "status": "todo",
-      "slug": "event-badge-design-and-sizes",
-      "primary": "event badge design",
-      "secondary": [
-        "name badge size",
-        "conference badge font size",
-        "4x3 badge"
-      ],
-      "intent": "how-to",
-      "angle": "Name-first hierarchy, readable font sizes, badge sizes, color-coding attendee types, QR check-in."
-    },
-    {
-      "n": 11,
-      "status": "todo",
-      "slug": "visitor-pass-template-and-system",
-      "primary": "visitor pass",
-      "secondary": [
-        "visitor id card",
-        "visitor badge template",
-        "temporary id card"
-      ],
-      "intent": "how-to",
-      "angle": "Reusable vs daily passes, numbering, color/date coding, return process, what to print."
-    },
-    {
-      "n": 12,
-      "status": "todo",
-      "slug": "id-card-design-ideas",
-      "primary": "id card design ideas",
-      "secondary": [
-        "id card color combination",
-        "modern id card design",
-        "id card background"
-      ],
-      "intent": "inspiration",
-      "angle": "Practical design patterns (header band, side stripe, photo-left, full art background) with contrast/readability rules."
-    },
-    {
-      "n": 13,
-      "status": "todo",
-      "slug": "portrait-vs-landscape-id-card",
-      "primary": "portrait vs landscape id card",
-      "secondary": [
-        "vertical id card",
-        "horizontal id card",
-        "id card orientation"
-      ],
-      "intent": "comparison",
-      "angle": "When each works (lanyard vs clip vs wallet), layout implications, holders."
-    },
-    {
-      "n": 14,
-      "status": "todo",
-      "slug": "transparent-signature-for-id-card",
-      "primary": "transparent signature for id card",
-      "secondary": [
-        "how to make signature transparent",
-        "signature png for id card",
-        "authorized signature on id card"
-      ],
-      "intent": "how-to",
-      "angle": "Capture signature on paper with phone, remove background, size and placement on card."
-    },
-    {
-      "n": 15,
-      "status": "todo",
-      "slug": "qr-code-on-id-card",
-      "primary": "qr code on id card",
-      "secondary": [
-        "barcode on id card",
-        "id card with qr code",
-        "id card verification"
-      ],
-      "intent": "how-to",
-      "angle": "What to encode (and not), size for reliable scanning, placement, privacy."
-    },
-    {
-      "n": 16,
-      "status": "todo",
-      "slug": "factory-worker-id-card",
-      "primary": "factory worker id card",
-      "secondary": [
-        "garments id card format",
-        "worker id card bangladesh",
-        "industrial id card"
-      ],
-      "intent": "how-to",
-      "angle": "RMG/factory needs: worker ID numbering, section/line, blood group, large readable numbers, durable printing, turnover workflow."
-    },
-    {
-      "n": 17,
-      "status": "todo",
-      "slug": "hospital-staff-id-card",
-      "primary": "hospital id card",
-      "secondary": [
-        "doctor id card",
-        "nurse id badge",
-        "medical staff id card"
-      ],
-      "intent": "how-to",
-      "angle": "Role colors, large role labels, infection-control friendly holders, privacy."
-    },
-    {
-      "n": 18,
-      "status": "todo",
-      "slug": "university-id-card-design",
-      "primary": "university id card",
-      "secondary": [
-        "college id card",
-        "college id card format",
-        "student id card university"
-      ],
-      "intent": "how-to",
-      "angle": "Session/batch, department, validity per academic year, library/exam uses."
-    },
-    {
-      "n": 19,
-      "status": "todo",
-      "slug": "coaching-center-id-card",
-      "primary": "coaching center id card",
-      "secondary": [
-        "tuition id card",
-        "coaching student id card",
-        "batch id card"
-      ],
-      "intent": "how-to",
-      "angle": "Batch/course fields, cheap fast printing, fee-paid validity tricks."
-    },
-    {
-      "n": 20,
-      "status": "todo",
-      "slug": "id-card-number-format",
-      "primary": "employee id number format",
-      "secondary": [
-        "how to create employee id numbers",
-        "student roll number system",
-        "id card numbering"
-      ],
-      "intent": "how-to",
-      "angle": "Numbering schemes (year+dept+serial), check digits, avoiding personal data in IDs."
-    },
-    {
-      "n": 21,
-      "status": "todo",
-      "slug": "blood-group-on-id-card",
-      "primary": "blood group on id card",
-      "secondary": [
-        "emergency contact on id card",
-        "medical info id card"
-      ],
-      "intent": "how-to",
-      "angle": "Why it's common in Bangladesh/South Asia, accuracy, consent, placement."
-    },
-    {
-      "n": 22,
-      "status": "todo",
-      "slug": "membership-card-design",
-      "primary": "membership card design",
-      "secondary": [
-        "club membership card",
-        "membership card template",
-        "member id card"
-      ],
-      "intent": "how-to",
-      "angle": "Clubs, associations, gyms: member number, validity, renewal stickers vs reprint."
-    },
-    {
-      "n": 23,
-      "status": "todo",
-      "slug": "id-card-font-size-and-readability",
-      "primary": "id card font size",
-      "secondary": [
-        "best font for id card",
-        "id card typography"
-      ],
-      "intent": "how-to",
-      "angle": "Minimum sizes in pt/mm at CR80, font choices, contrast, long names, Bangla script."
-    },
-    {
-      "n": 24,
-      "status": "todo",
-      "slug": "how-to-cut-id-cards-neatly",
-      "primary": "how to cut id cards",
-      "secondary": [
-        "id card corner cutter",
-        "paper trimmer for id cards",
-        "rounded corner id card"
-      ],
-      "intent": "how-to",
-      "angle": "Tools by budget, cut marks, corner rounding, lamination order."
-    },
-    {
-      "n": 25,
-      "status": "todo",
-      "slug": "id-card-holder-and-lanyard-guide",
-      "primary": "id card holder size",
-      "secondary": [
-        "lanyard id card",
-        "id card holder types",
-        "badge reel"
-      ],
-      "intent": "buying guide",
-      "angle": "Holder sizes for CR80/badges, hole punch placement, lanyard safety (breakaway for schools)."
-    },
-    {
-      "n": 26,
-      "status": "todo",
-      "slug": "id-card-printer-vs-a4-printing-cost",
-      "primary": "id card printer price",
-      "secondary": [
-        "id card printer vs inkjet",
-        "cost per id card",
-        "id card printer price in bangladesh"
-      ],
-      "intent": "commercial",
-      "angle": "Break-even math: card printer vs A4 inkjet vs print shop, by number of cards per year."
-    },
-    {
-      "n": 27,
-      "status": "todo",
-      "slug": "bilingual-id-card-bangla-english",
-      "primary": "bangla id card",
-      "secondary": [
-        "bilingual id card",
-        "id card in bangla"
-      ],
-      "intent": "how-to",
-      "angle": "Fonts, field order, mixing scripts cleanly, name spelling consistency."
-    },
-    {
-      "n": 28,
-      "status": "todo",
-      "slug": "id-card-expiry-and-renewal",
-      "primary": "id card validity date",
-      "secondary": [
-        "id card expiry",
-        "id card renewal process"
-      ],
-      "intent": "how-to",
-      "angle": "Choosing validity periods, tracking expiring cards, renewal day workflow."
-    },
-    {
-      "n": 29,
-      "status": "todo",
-      "slug": "id-card-security-features-small-organizations",
-      "primary": "id card security features",
-      "secondary": [
-        "prevent fake id cards",
-        "hologram id card"
-      ],
-      "intent": "how-to",
-      "angle": "Affordable anti-copy measures for schools/SMEs: hologram overlays, microtext, signatures, QR verification."
-    },
-    {
-      "n": 30,
-      "status": "todo",
-      "slug": "kids-id-card",
-      "primary": "kids id card",
-      "secondary": [
-        "kindergarten id card",
-        "child id card for school"
-      ],
-      "intent": "how-to",
-      "angle": "Safety-first fields (guardian contact, no home address), durable, breakaway lanyards."
-    },
-    {
-      "n": 31,
-      "status": "todo",
-      "slug": "ngo-id-card",
-      "primary": "ngo id card",
-      "secondary": [
-        "volunteer id card",
-        "field staff id card"
-      ],
-      "intent": "how-to",
-      "angle": "Field staff verification, project/donor branding, volunteers vs staff."
-    },
-    {
-      "n": 32,
-      "status": "todo",
-      "slug": "lost-id-card-replacement-policy",
-      "primary": "lost id card",
-      "secondary": [
-        "id card replacement",
-        "duplicate id card"
-      ],
-      "intent": "how-to",
-      "angle": "Simple policy template, deactivation, reprint marking, fees."
-    },
-    {
-      "n": 33,
-      "status": "todo",
-      "slug": "digital-vs-printed-id-cards",
-      "primary": "digital id card vs physical",
-      "secondary": [
-        "digital employee id",
-        "id card on phone"
-      ],
-      "intent": "comparison",
-      "angle": "When printed still wins (low connectivity, factories, schools), hybrid approach."
-    },
-    {
-      "n": 34,
-      "status": "todo",
-      "slug": "id-card-templates-what-makes-a-good-one",
-      "primary": "id card template",
-      "secondary": [
-        "free id card template",
-        "editable id card template"
-      ],
-      "intent": "commercial/inspiration",
-      "angle": "Checklist to judge a template (safe zones, field flexibility, both orientations), mistakes."
-    },
-    {
-      "n": 35,
-      "status": "todo",
-      "slug": "madrasa-id-card",
-      "primary": "madrasa id card",
-      "secondary": [
-        "madrasa student id card",
-        "islamic school id card"
-      ],
-      "intent": "how-to",
-      "angle": "Fields (class/jamat, guardian), bilingual/Arabic names, modest photo guidance, low-cost printing."
-    }
-  ]
+ "_about": "Keyword plan for the shadinotatech.com blog (CardCraft – ID Card Maker cluster). Research: 2026-11-15. Head terms like 'id card maker' are dominated by big tool pages (Canva, Fotor, Kittl, Pixlr), so the plan targets long-tail, practical 'how to' and spec queries where real product experience (A4 print sheets, 300 DPI, bulk Excel import, Bangladesh print market) gives an edge. Publish in order; set status to 'published' with the date and slug when done. Pillar = how-to-make-id-cards-on-your-phone; every cluster post links to the pillar and to 1-2 siblings.",
+ "posts": [
+  {
+   "n": 1,
+   "status": "published",
+   "slug": "how-to-print-id-cards-on-a4-paper",
+   "primary": "how to print id cards on a4 paper",
+   "secondary": [
+    "how many id cards on a4 sheet",
+    "print id card at home",
+    "id card a4 layout",
+    "duplex id card printing"
+   ],
+   "intent": "how-to",
+   "angle": "Exact A4 math for CR80 (10-up vs 8-up), margins, cut marks, 100% scale, front/back alignment, paper/PVC sheet choices, cutting. Diagram of A4 layout.",
+   "published": "2026-11-15"
+  },
+  {
+   "n": 2,
+   "status": "published",
+   "slug": "id-card-size-cr80-mm-inches-pixels",
+   "primary": "id card size in pixels",
+   "secondary": [
+    "cr80 card size",
+    "standard id card size in mm",
+    "id card size 300 dpi",
+    "cr79 cr100 size"
+   ],
+   "intent": "reference",
+   "angle": "One definitive size table (mm/in/px at 300 and 600 DPI), corner radius, thickness, bleed and safe zone, portrait vs landscape, badge sizes (4x3, 3R, 4R, A6).",
+   "published": "2026-11-16"
+  },
+  {
+   "n": 3,
+   "status": "published",
+   "slug": "how-to-make-id-cards-on-your-phone",
+   "primary": "how to make id card on mobile",
+   "secondary": [
+    "id card maker app",
+    "id card maker for android",
+    "make id card with photo on phone"
+   ],
+   "intent": "pillar how-to",
+   "angle": "PILLAR. End-to-end workflow on a phone: plan fields, photos, template, data import, print/export, quality checks. Links to every cluster post.",
+   "published": "2026-11-17"
+  },
+  {
+   "n": 4,
+   "status": "published",
+   "slug": "employee-id-card-design-what-to-include",
+   "primary": "employee id card design",
+   "secondary": [
+    "what to include on employee id card",
+    "staff id card format",
+    "office id card"
+   ],
+   "intent": "how-to",
+   "angle": "Front vs back field checklist, hierarchy, privacy (what NOT to print), examples by company size.",
+   "published": "2026-11-18"
+  },
+  {
+   "n": 5,
+   "status": "published",
+   "slug": "school-id-card-design-guide",
+   "primary": "school id card design",
+   "secondary": [
+    "student id card format",
+    "student id card template",
+    "madrasa id card"
+   ],
+   "intent": "how-to",
+   "angle": "Fields for students (class, section, roll, guardian phone, blood group), age-appropriate privacy, yearly renewal workflow for schools and madrasas.",
+   "published": "2026-11-19"
+  },
+  {
+   "n": 6,
+   "status": "published",
+   "slug": "how-to-take-id-card-photo-with-phone",
+   "primary": "how to take id card photo",
+   "secondary": [
+    "id card photo background",
+    "id photo tips",
+    "passport size photo for id card"
+   ],
+   "intent": "how-to",
+   "angle": "Lighting, plain background, framing, head size ratio, batch photo day for a whole school/office, common rejects.",
+   "published": "2026-11-20"
+  },
+  {
+   "n": 7,
+   "status": "published",
+   "slug": "what-to-put-on-the-back-of-an-id-card",
+   "primary": "back side of id card",
+   "secondary": [
+    "id card back design",
+    "id card back side text",
+    "if found return id card text",
+    "id card terms and conditions",
+    "id card back side in bangla"
+   ],
+   "intent": "how-to",
+   "angle": "Ready-to-copy back-side text blocks (if found, terms, emergency, validity), layout tips.",
+   "published": "2026-11-21"
+  },
+  {
+   "n": 8,
+   "status": "published",
+   "slug": "pvc-id-card-printing-at-home",
+   "primary": "pvc id card printing",
+   "secondary": [
+    "inkjet pvc card",
+    "a4 pvc sheet id card",
+    "pvc id card price in bangladesh",
+    "pvc id card printing at home",
+    "dragon sheet id card"
+   ],
+   "intent": "how-to/commercial",
+   "angle": "Inkjet PVC cards vs A4 PVC/'dragon' sheets vs laminated paper vs card printers; cost per card; Bangladesh price ranges.",
+   "published": "2026-11-22"
+  },
+  {
+   "n": 9,
+   "status": "published",
+   "slug": "make-id-cards-from-excel-list",
+   "primary": "id card from excel data",
+   "secondary": [
+    "bulk id card maker",
+    "id card csv import",
+    "mass id card printing"
+   ],
+   "intent": "how-to",
+   "angle": "Preparing a clean spreadsheet (column names, ID numbers, photo filenames), import, bulk photos, checking errors.",
+   "published": "2026-11-23"
+  },
+  {
+   "n": 10,
+   "status": "published",
+   "slug": "event-badge-design-and-sizes",
+   "primary": "event badge design",
+   "secondary": [
+    "name badge size",
+    "conference badge font size",
+    "4x3 badge",
+    "event badge template",
+    "qr code on event badge"
+   ],
+   "intent": "how-to",
+   "angle": "Name-first hierarchy, readable font sizes, badge sizes, color-coding attendee types, QR check-in.",
+   "published": "2026-11-24"
+  },
+  {
+   "n": 11,
+   "status": "todo",
+   "slug": "visitor-pass-template-and-system",
+   "primary": "visitor pass",
+   "secondary": [
+    "visitor id card",
+    "visitor badge template",
+    "temporary id card"
+   ],
+   "intent": "how-to",
+   "angle": "Reusable vs daily passes, numbering, color/date coding, return process, what to print."
+  },
+  {
+   "n": 12,
+   "status": "todo",
+   "slug": "id-card-design-ideas",
+   "primary": "id card design ideas",
+   "secondary": [
+    "id card color combination",
+    "modern id card design",
+    "id card background"
+   ],
+   "intent": "inspiration",
+   "angle": "Practical design patterns (header band, side stripe, photo-left, full art background) with contrast/readability rules."
+  },
+  {
+   "n": 13,
+   "status": "todo",
+   "slug": "portrait-vs-landscape-id-card",
+   "primary": "portrait vs landscape id card",
+   "secondary": [
+    "vertical id card",
+    "horizontal id card",
+    "id card orientation"
+   ],
+   "intent": "comparison",
+   "angle": "When each works (lanyard vs clip vs wallet), layout implications, holders."
+  },
+  {
+   "n": 14,
+   "status": "todo",
+   "slug": "transparent-signature-for-id-card",
+   "primary": "transparent signature for id card",
+   "secondary": [
+    "how to make signature transparent",
+    "signature png for id card",
+    "authorized signature on id card"
+   ],
+   "intent": "how-to",
+   "angle": "Capture signature on paper with phone, remove background, size and placement on card."
+  },
+  {
+   "n": 15,
+   "status": "todo",
+   "slug": "qr-code-on-id-card",
+   "primary": "qr code on id card",
+   "secondary": [
+    "barcode on id card",
+    "id card with qr code",
+    "id card verification"
+   ],
+   "intent": "how-to",
+   "angle": "What to encode (and not), size for reliable scanning, placement, privacy."
+  },
+  {
+   "n": 16,
+   "status": "todo",
+   "slug": "factory-worker-id-card",
+   "primary": "factory worker id card",
+   "secondary": [
+    "garments id card format",
+    "worker id card bangladesh",
+    "industrial id card"
+   ],
+   "intent": "how-to",
+   "angle": "RMG/factory needs: worker ID numbering, section/line, blood group, large readable numbers, durable printing, turnover workflow."
+  },
+  {
+   "n": 17,
+   "status": "todo",
+   "slug": "hospital-staff-id-card",
+   "primary": "hospital id card",
+   "secondary": [
+    "doctor id card",
+    "nurse id badge",
+    "medical staff id card"
+   ],
+   "intent": "how-to",
+   "angle": "Role colors, large role labels, infection-control friendly holders, privacy."
+  },
+  {
+   "n": 18,
+   "status": "todo",
+   "slug": "university-id-card-design",
+   "primary": "university id card",
+   "secondary": [
+    "college id card",
+    "college id card format",
+    "student id card university"
+   ],
+   "intent": "how-to",
+   "angle": "Session/batch, department, validity per academic year, library/exam uses."
+  },
+  {
+   "n": 19,
+   "status": "todo",
+   "slug": "coaching-center-id-card",
+   "primary": "coaching center id card",
+   "secondary": [
+    "tuition id card",
+    "coaching student id card",
+    "batch id card"
+   ],
+   "intent": "how-to",
+   "angle": "Batch/course fields, cheap fast printing, fee-paid validity tricks."
+  },
+  {
+   "n": 20,
+   "status": "todo",
+   "slug": "id-card-number-format",
+   "primary": "employee id number format",
+   "secondary": [
+    "how to create employee id numbers",
+    "student roll number system",
+    "id card numbering"
+   ],
+   "intent": "how-to",
+   "angle": "Numbering schemes (year+dept+serial), check digits, avoiding personal data in IDs."
+  },
+  {
+   "n": 21,
+   "status": "todo",
+   "slug": "blood-group-on-id-card",
+   "primary": "blood group on id card",
+   "secondary": [
+    "emergency contact on id card",
+    "medical info id card"
+   ],
+   "intent": "how-to",
+   "angle": "Why it's common in Bangladesh/South Asia, accuracy, consent, placement."
+  },
+  {
+   "n": 22,
+   "status": "todo",
+   "slug": "membership-card-design",
+   "primary": "membership card design",
+   "secondary": [
+    "club membership card",
+    "membership card template",
+    "member id card"
+   ],
+   "intent": "how-to",
+   "angle": "Clubs, associations, gyms: member number, validity, renewal stickers vs reprint."
+  },
+  {
+   "n": 23,
+   "status": "todo",
+   "slug": "id-card-font-size-and-readability",
+   "primary": "id card font size",
+   "secondary": [
+    "best font for id card",
+    "id card typography"
+   ],
+   "intent": "how-to",
+   "angle": "Minimum sizes in pt/mm at CR80, font choices, contrast, long names, Bangla script."
+  },
+  {
+   "n": 24,
+   "status": "todo",
+   "slug": "how-to-cut-id-cards-neatly",
+   "primary": "how to cut id cards",
+   "secondary": [
+    "id card corner cutter",
+    "paper trimmer for id cards",
+    "rounded corner id card"
+   ],
+   "intent": "how-to",
+   "angle": "Tools by budget, cut marks, corner rounding, lamination order."
+  },
+  {
+   "n": 25,
+   "status": "todo",
+   "slug": "id-card-holder-and-lanyard-guide",
+   "primary": "id card holder size",
+   "secondary": [
+    "lanyard id card",
+    "id card holder types",
+    "badge reel"
+   ],
+   "intent": "buying guide",
+   "angle": "Holder sizes for CR80/badges, hole punch placement, lanyard safety (breakaway for schools)."
+  },
+  {
+   "n": 26,
+   "status": "todo",
+   "slug": "id-card-printer-vs-a4-printing-cost",
+   "primary": "id card printer price",
+   "secondary": [
+    "id card printer vs inkjet",
+    "cost per id card",
+    "id card printer price in bangladesh"
+   ],
+   "intent": "commercial",
+   "angle": "Break-even math: card printer vs A4 inkjet vs print shop, by number of cards per year."
+  },
+  {
+   "n": 27,
+   "status": "todo",
+   "slug": "bilingual-id-card-bangla-english",
+   "primary": "bangla id card",
+   "secondary": [
+    "bilingual id card",
+    "id card in bangla"
+   ],
+   "intent": "how-to",
+   "angle": "Fonts, field order, mixing scripts cleanly, name spelling consistency."
+  },
+  {
+   "n": 28,
+   "status": "todo",
+   "slug": "id-card-expiry-and-renewal",
+   "primary": "id card validity date",
+   "secondary": [
+    "id card expiry",
+    "id card renewal process"
+   ],
+   "intent": "how-to",
+   "angle": "Choosing validity periods, tracking expiring cards, renewal day workflow."
+  },
+  {
+   "n": 29,
+   "status": "todo",
+   "slug": "id-card-security-features-small-organizations",
+   "primary": "id card security features",
+   "secondary": [
+    "prevent fake id cards",
+    "hologram id card"
+   ],
+   "intent": "how-to",
+   "angle": "Affordable anti-copy measures for schools/SMEs: hologram overlays, microtext, signatures, QR verification."
+  },
+  {
+   "n": 30,
+   "status": "todo",
+   "slug": "kids-id-card",
+   "primary": "kids id card",
+   "secondary": [
+    "kindergarten id card",
+    "child id card for school"
+   ],
+   "intent": "how-to",
+   "angle": "Safety-first fields (guardian contact, no home address), durable, breakaway lanyards."
+  },
+  {
+   "n": 31,
+   "status": "todo",
+   "slug": "ngo-id-card",
+   "primary": "ngo id card",
+   "secondary": [
+    "volunteer id card",
+    "field staff id card"
+   ],
+   "intent": "how-to",
+   "angle": "Field staff verification, project/donor branding, volunteers vs staff."
+  },
+  {
+   "n": 32,
+   "status": "todo",
+   "slug": "lost-id-card-replacement-policy",
+   "primary": "lost id card",
+   "secondary": [
+    "id card replacement",
+    "duplicate id card"
+   ],
+   "intent": "how-to",
+   "angle": "Simple policy template, deactivation, reprint marking, fees."
+  },
+  {
+   "n": 33,
+   "status": "todo",
+   "slug": "digital-vs-printed-id-cards",
+   "primary": "digital id card vs physical",
+   "secondary": [
+    "digital employee id",
+    "id card on phone"
+   ],
+   "intent": "comparison",
+   "angle": "When printed still wins (low connectivity, factories, schools), hybrid approach."
+  },
+  {
+   "n": 34,
+   "status": "todo",
+   "slug": "id-card-templates-what-makes-a-good-one",
+   "primary": "id card template",
+   "secondary": [
+    "free id card template",
+    "editable id card template"
+   ],
+   "intent": "commercial/inspiration",
+   "angle": "Checklist to judge a template (safe zones, field flexibility, both orientations), mistakes."
+  },
+  {
+   "n": 35,
+   "status": "todo",
+   "slug": "madrasa-id-card",
+   "primary": "madrasa id card",
+   "secondary": [
+    "madrasa student id card",
+    "islamic school id card"
+   ],
+   "intent": "how-to",
+   "angle": "Fields (class/jamat, guardian), bilingual/Arabic names, modest photo guidance, low-cost printing."
+  }
+ ]
 }

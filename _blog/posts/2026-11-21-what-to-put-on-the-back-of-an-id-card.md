@@ -4,6 +4,7 @@ description: What to put on the back side of an ID card: six blocks in priority 
 slug: what-to-put-on-the-back-of-an-id-card
 date: 2026-11-21
 category: Design
+updated: 2026-11-25
 keywords: back side of id card, id card back design, id card back side text, if found return id card text, id card terms and conditions, id card back side in bangla
 ---
 
@@ -155,7 +156,7 @@ In factories, guards often check the back too, so print the section and line in 
 > Must be worn visibly at all times and returned at the gate before leaving.  
 > Visitors must be accompanied in restricted areas.
 
-Reusable visitor passes should carry a pass number but no visitor name, so you can log the name at the desk and reuse the card.
+Reusable visitor passes should carry a pass number but no visitor name, so you can log the name at the desk and reuse the card. For the full routine (numbering, colour and weekday coding, the visitor log and getting every pass back), see our guide to [setting up a visitor pass system](/blog/visitor-pass-template-and-system/).
 
 ### Event pass
 

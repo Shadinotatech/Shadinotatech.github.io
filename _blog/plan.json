@@ -151,16 +151,19 @@
   },
   {
    "n": 11,
-   "status": "todo",
+   "status": "published",
    "slug": "visitor-pass-template-and-system",
    "primary": "visitor pass",
    "secondary": [
     "visitor id card",
     "visitor badge template",
-    "temporary id card"
+    "temporary id card",
+    "visitor pass system",
+    "visitor log book"
    ],
    "intent": "how-to",
-   "angle": "Reusable vs daily passes, numbering, color/date coding, return process, what to print."
+   "angle": "Reusable vs daily passes, numbering, color/date coding, return process, what to print.",
+   "published": "2026-11-25"
   },
   {
    "n": 12,

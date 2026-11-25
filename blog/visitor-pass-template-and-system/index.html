@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Visitor Pass Template and System: Numbering, Colours, Return | Shadinota Tech</title>
+<meta name="description" content="Set up a visitor pass system that works on paper: reusable vs daily passes, what to print, numbering, colour and date coding, a visitor log and returns.">
+<link rel="canonical" href="https://shadinotatech.com/blog/visitor-pass-template-and-system/">
+<link rel="icon" href="/favicon.ico?v=2" sizes="any">
+<link rel="apple-touch-icon" href="/assets/icon-v2-180.png">
+<link rel="alternate" type="application/rss+xml" title="Shadinota Tech Blog" href="https://shadinotatech.com/blog/feed.xml">
+<meta name="theme-color" content="#09090b">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Shadinota Tech">
+<meta property="og:title" content="Visitor Pass Template and System: Numbering, Colours, Return | Shadinota Tech">
+<meta property="og:description" content="Set up a visitor pass system that works on paper: reusable vs daily passes, what to print, numbering, colour and date coding, a visitor log and returns.">
+<meta property="og:url" content="https://shadinotatech.com/blog/visitor-pass-template-and-system/">
+<meta property="og:image" content="https://shadinotatech.com/blog/visitor-pass-template-and-system/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Visitor Pass Template and System: Numbering, Colours, Return", "description": "Set up a visitor pass system that works on paper: reusable vs daily passes, what to print, numbering, colour and date coding, a visitor log and returns.", "image": "https://shadinotatech.com/blog/visitor-pass-template-and-system/og.png", "datePublished": "2026-11-25", "dateModified": "2026-11-25", "author": {"@type": "Person", "name": "Md. Ruhul Amin", "jobTitle": "Founder of Shadinota Tech and developer of CardCraft – ID Card Maker", "url": "https://shadinotatech.com/", "worksFor": {"@type": "Organization", "name": "Shadinota Tech", "url": "https://shadinotatech.com/"}}, "publisher": {"@type": "Organization", "name": "Shadinota Tech", "logo": {"@type": "ImageObject", "url": "https://shadinotatech.com/assets/icon-v2-512.png"}}, "mainEntityOfPage": "https://shadinotatech.com/blog/visitor-pass-template-and-system/", "keywords": "visitor pass, visitor id card, visitor badge template, temporary id card, visitor pass system, visitor log book", "wordCount": 2690, "inLanguage": "en"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://shadinotatech.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://shadinotatech.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Visitor Pass Template and System: Numbering, Colours, Return", "item": "https://shadinotatech.com/blog/visitor-pass-template-and-system/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a visitor pass?", "acceptedAnswer": {"@type": "Answer", "text": "A visitor pass is a temporary card given to someone who does not work or study at a site, showing they have been checked in. It usually shows VISITOR, a pass number and the organisation's name, linked to an entry in a visitor log. It is an internal pass, not an identity document."}}, {"@type": "Question", "name": "What should be written on a visitor ID card?", "acceptedAnswer": {"@type": "Answer", "text": "Print VISITOR in large letters, a pass number, the organisation name, the visitor type (contractor, vendor, parent) and, on daily passes, the date. On the back, add \"return before leaving\", key site rules and an office phone number. Keep the visitor's name and phone number in the log rather than on a reusable pass."}}, {"@type": "Question", "name": "Should a visitor pass have the visitor's name on it?", "acceptedAnswer": {"@type": "Answer", "text": "Only on daily passes that are not reused. Reusable passes should carry a number instead, with the name written in the log next to that number. This keeps the pass reusable and means a lost pass does not reveal who carried it."}}, {"@type": "Question", "name": "How do I stop visitors reusing old passes?", "acceptedAnswer": {"@type": "Answer", "text": "Use dated or weekday-coloured daily passes for one-off visits, so an old pass is visibly wrong the next day. For reusable passes, collect every pass at the exit, count them against the log each evening, and retire the number of any pass that goes missing."}}, {"@type": "Question", "name": "What is the best size for a visitor badge?", "acceptedAnswer": {"@type": "Answer", "text": "A CR80 card (85.6 × 54 mm) in a standard holder suits most offices and schools and prints 10 per A4 sheet. If guards must recognise visitors from further away, as on a factory floor or in a hospital, use a 4 × 3 inch badge (101.6 × 76.2 mm), which prints 6 per A4 sheet."}}]}</script>
+
+<style>
+:root{--bg:#09090b;--bg2:#0f0f12;--card:#131317;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.14);--fg:#f4f4f5;--muted:#a1a1aa;--dim:#71717a;--acc:#4fe3c1;--acc2:#8b9cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.75 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{max-width:100%;height:auto}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.h{font-family:Sora,Inter,sans-serif;letter-spacing:-.03em;line-height:1.15}
+.bgfx{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(800px 500px at 85% -10%,rgba(79,227,193,.10),transparent 60%),radial-gradient(700px 500px at -10% 30%,rgba(139,156,255,.07),transparent 60%),var(--bg)}
+header.top{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(9,9,11,.72);border-bottom:1px solid var(--line)}
+nav.main{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font:700 18px Sora,sans-serif;letter-spacing:-.02em}.brand img{width:36px;height:36px}
+.links{display:flex;gap:4px}.links a{padding:8px 14px;border-radius:999px;font-size:14.5px;color:var(--muted)}.links a:hover,.links a.on{color:var(--fg);background:rgba(255,255,255,.06)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:11px 20px;border-radius:14px;font-weight:600;font-size:15px;border:1px solid var(--line2);background:rgba(255,255,255,.03);transition:.2s;color:var(--fg)}
+.btn:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.3)}.btn.pri{background:var(--fg);color:#09090b;border-color:var(--fg)}
+@media(max-width:720px){.links{display:none}}
+/* article */
+.crumbs{font-size:14px;color:var(--dim);margin:40px 0 18px}.crumbs a:hover{color:var(--fg)}
+.post-head{max-width:820px}
+.cat{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-bottom:14px}
+.post-head h1{font-size:clamp(32px,4.6vw,54px);margin:0 0 18px}
+.lede{font-size:clamp(18px,1.6vw,20px);color:var(--muted);margin:0 0 22px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--dim);padding-bottom:28px;border-bottom:1px solid var(--line)}
+.layout{display:grid;grid-template-columns:minmax(0,720px) 260px;gap:64px;justify-content:space-between;padding:40px 0 40px}
+.toc{position:sticky;top:96px;align-self:start;font-size:14px;border-left:1px solid var(--line);padding-left:18px}
+.toc b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:10px}
+.toc a{display:block;color:var(--muted);padding:5px 0;line-height:1.4}.toc a:hover{color:var(--fg)}
+.toc a.btn{display:flex;color:#09090b;padding:8px 14px}
+.toc .side-cta{margin-top:26px;padding:18px;border:1px solid var(--line2);border-radius:16px;background:var(--card)}
+.toc .side-cta p{margin:0 0 12px;color:var(--muted);font-size:13.5px;line-height:1.5}
+@media(max-width:1000px){.layout{grid-template-columns:minmax(0,1fr)}.toc{display:none}}
+.prose h2{font-family:Sora,Inter,sans-serif;letter-spacing:-.025em;font-size:clamp(25px,2.6vw,32px);line-height:1.2;margin:56px 0 16px;scroll-margin-top:90px}
+.prose h3{font-family:Sora,Inter,sans-serif;font-size:21px;letter-spacing:-.02em;margin:34px 0 10px;scroll-margin-top:90px}
+.prose p,.prose li{color:#d4d4d8}.prose strong{color:var(--fg)}
+.prose a{color:var(--acc);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.prose ul,.prose ol{padding-left:24px}.prose li{margin:6px 0}
+.prose blockquote{margin:28px 0;padding:18px 22px;border:1px solid rgba(79,227,193,.25);background:rgba(79,227,193,.06);border-radius:16px}
+.prose blockquote p{margin:0;color:var(--fg)}
+.prose table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;display:block;overflow-x:auto}
+.prose th,.prose td{border-bottom:1px solid var(--line2);padding:11px 12px;text-align:left;vertical-align:top;white-space:nowrap}
+.prose td{white-space:normal}.prose th{color:var(--fg);font-weight:600;background:rgba(255,255,255,.03)}
+.prose code{font-size:.9em;background:rgba(255,255,255,.07);padding:2px 6px;border-radius:6px}
+.prose figure{margin:32px 0}.prose figure img,.prose figure svg{display:block;width:100%;border-radius:18px;border:1px solid var(--line)}
+.prose figcaption{font-size:14px;color:var(--dim);margin-top:10px;text-align:center}
+.prose hr{border:0;border-top:1px solid var(--line);margin:48px 0}
+.keytakeaways{border:1px solid var(--line2);background:var(--card);border-radius:20px;padding:22px 26px;margin:0 0 32px}
+.keytakeaways b{display:block;font-family:Sora,sans-serif;margin-bottom:6px}
+.keytakeaways>p:first-child{margin-top:0}
+.keytakeaways ul{margin:0}
+.cta{margin:48px 0;border:1px solid var(--line2);border-radius:24px;padding:30px;background:linear-gradient(135deg,#15151a,#0d0d10);display:grid;grid-template-columns:72px 1fr;gap:20px;align-items:center}
+.cta img{width:72px;height:72px;border-radius:18px}
+.cta h3{margin:0 0 6px!important;font-size:21px}.cta p{margin:0 0 16px!important;color:var(--muted)!important;font-size:15.5px}
+@media(max-width:600px){.cta{grid-template-columns:1fr}}
+.author{display:flex;gap:16px;align-items:center;border-top:1px solid var(--line);margin-top:48px;padding-top:28px;font-size:15px;color:var(--muted)}
+.author img{width:52px;height:52px}.author b{color:var(--fg);display:block}
+.related{border-top:1px solid var(--line);padding:56px 0 24px}
+.related h2{font-size:28px;margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.pcard{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--card);transition:border-color .25s,transform .25s;display:flex;flex-direction:column}
+.pcard:hover{border-color:var(--line2);transform:translateY(-3px)}
+.pcard img{aspect-ratio:1200/630;object-fit:cover;width:100%;display:block;border-bottom:1px solid var(--line)}
+.pcard .pb{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px}
+.pcard .c{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--acc)}
+.pcard h3{margin:0;font-size:20px}.pcard p{margin:0;color:var(--muted);font-size:15px;line-height:1.6}
+.pcard .d{font-size:13px;color:var(--dim)}
+.bloghero{padding:72px 0 40px;max-width:760px}
+.bloghero h1{font-size:clamp(40px,6vw,72px);margin:12px 0 16px}.bloghero p{color:var(--muted);font-size:19px;margin:0}
+footer{border-top:1px solid var(--line);margin-top:80px;padding:32px 0 40px;font-size:14px;color:var(--dim)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}footer a:hover{color:var(--fg)}
+</style>
+</head><body>
+<div class="bgfx" aria-hidden="true"></div>
+<header class="top"><nav class="main wrap" aria-label="Main">
+<a class="brand" href="/"><img src="/assets/logo-white-256.webp" alt="" width="36" height="36">Shadinota Tech</a>
+<div class="links"><a href="/#apps">Apps</a><a href="/cardcraft/">CardCraft</a><a href="/blog/" class="on">Blog</a><a href="/#contact">Contact</a></div>
+<a class="btn" style="min-height:40px;padding:8px 16px;font-size:14px" href="https://play.google.com/store/apps/details?id=com.shadinota.smartid&referrer=utm_source%3Dblog%26utm_medium%3Darticle" target="_blank" rel="noopener">Get CardCraft</a>
+</nav></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Workflows</nav>
+<header class="post-head"><span class="cat">Workflows</span>
+<h1 class="h">Visitor Pass Template and System: Numbering, Colours, Return</h1>
+<p class="lede">Set up a visitor pass system that works on paper: reusable vs daily passes, what to print, numbering, colour and date coding, a visitor log and returns.</p>
+<div class="meta"><span>By Md. Ruhul Amin</span><span><time datetime="2026-11-25">25 November 2026</time></span><span>13 min read</span></div></header>
+<div class="layout">
+<article class="prose"><div class="keytakeaways">
+<p><b>Key takeaways</b></p>
+<ul>
+<li>A visitor pass only works as part of a <strong>system</strong>: a numbered pass, a log entry with the same number, and a check at the exit that every pass came back.</li>
+<li>Most small offices, schools and factories need <strong>reusable numbered passes</strong> (no visitor name printed) for regular traffic, plus <strong>dated daily passes</strong> for busy days or one-off events.</li>
+<li>Print <strong>VISITOR in large capital letters</strong> (about 9–12 mm tall on a CR80 card), the pass number, the organisation name and the return instruction. Never print the visitor's phone number or NID/passport number.</li>
+<li>Use <strong>one colour per visitor type</strong> (visitor, contractor, vendor) and, for daily passes, <strong>one colour per weekday</strong>, always with a printed word or letter, not colour alone.</li>
+<li>A pack of <strong>30–50 reusable CR80 passes</strong> prints on 3–5 A4 sheets (10 per side) and covers most small sites.</li>
+</ul>
+</div>
+<p>Most visitor passes fail quietly: they go home in visitors' pockets, nobody knows which ones are missing, and a guard cannot tell yesterday's pass from today's.</p>
+<p>This guide shows you how to set up a visitor pass system with paper and a printer, not expensive software: which pass type to use, what to print, numbering, colour coding, the visitor log and getting every pass back. It suits offices, schools, madrasas, garment factories, hospitals and NGOs.</p>
+<h2 id="reusable-pass-or-daily-pass-which-do-you-need">Reusable pass or daily pass: which do you need?</h2>
+<p>There are two basic designs, and many sites use both.</p>
+<p><strong>Reusable numbered passes</strong> are printed once, usually on PVC or laminated card, and handed out again and again. The visitor's name is not printed on the pass; it goes in the log next to the pass number. They are cheap per visit and quick at the desk.</p>
+<p><strong>Daily (dated) passes</strong> are printed or written for one day and not reused. They carry the date, sometimes the visitor's name and the host, and they are useless the next day even if they are never returned. Commercial versions include self-expiring badges that show a "VOID" pattern or coloured lines after a set time, and rewritable cards that can be erased and reprinted, according to badge suppliers such as <a href="https://www.namebadge.com/learn/industry-guides/visitor-badges-explained">NameBadge</a> and <a href="https://identisys.com/about-identisys/learning-center/id-and-tracking-glossary/temporary-id-badge">IdentiSys</a>. A paper pass with a printed date and a weekday colour does the same job for almost nothing.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Reusable numbered pass</th>
+<th>Daily dated pass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Printed on it</td>
+<td>VISITOR, pass number, organisation, return text</td>
+<td>VISITOR, date (or weekday colour), name and host optional</td>
+</tr>
+<tr>
+<td>Material</td>
+<td>PVC card or laminated 250–300 gsm card</td>
+<td>80–200 gsm paper or card, often in a pouch</td>
+</tr>
+<tr>
+<td>Cost per visit</td>
+<td>Very low (one card lasts months)</td>
+<td>Low, but you print every day</td>
+</tr>
+<tr>
+<td>Desk speed</td>
+<td>Fast: hand over the next number</td>
+<td>Slower if you write names; fast if pre-printed</td>
+</tr>
+<tr>
+<td>Main risk</td>
+<td>Pass not returned and reused later</td>
+<td>Old pass shown again if dates are hard to read</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Offices, schools, factory gates with steady traffic</td>
+<td>Exam days, parents' days, audits, events, very busy lobbies</td>
+</tr>
+</tbody>
+</table>
+<p>A simple decision rule (our own): if fewer than about 50 visitors come on a normal day, reusable numbered passes plus a log are enough. For days with hundreds of visitors (admission week, a buyer audit, sports day), print dated daily passes so you do not need to recover every one.</p>
+<blockquote>
+<p><strong>Tip:</strong> Make the two systems look completely different (for example white passes with a blue band vs yellow daily passes), so guards never mix them up.</p>
+</blockquote>
+<h2 id="what-should-a-visitor-pass-show">What should a visitor pass show?</h2>
+<p>A visitor pass has one job: to show staff and guards, from a few metres away, that this person is a checked-in visitor today.</p>
+<p><strong>Front of the pass</strong></p>
+<ol>
+<li><strong>The word VISITOR</strong> in large bold capitals, across most of the card width. Add the local word too where it helps: in Bangladesh, <em>দর্শনার্থী</em> (visitor) or <em>অতিথি</em> (guest) under the English.</li>
+<li><strong>Pass number</strong>, large enough for the guard to read and write down, for example <code>V-017</code>.</li>
+<li><strong>Organisation name and logo</strong>, small.</li>
+<li><strong>Visitor type</strong>, as a coloured band with a printed word: VISITOR, CONTRACTOR, VENDOR, PARENT, INTERVIEW.</li>
+<li><strong>Date or validity</strong>, on daily passes only (for example <code>25 NOV 2026</code> or a big weekday letter).</li>
+</ol>
+<p><strong>Back of the pass</strong></p>
+<ul>
+<li>"This pass remains the property of [organisation]. Return it at the gate/reception before leaving."</li>
+<li>Rules that matter on site: escort required, no photography in production areas, restricted zones.</li>
+<li>"If found, please return to [address] or call [office number]." Use an office number, never a personal one.</li>
+</ul>
+<p><strong>Never print</strong> the visitor's phone number, NID or passport number, or home address on a pass. That information belongs in the log, which stays at the desk. Our guide to <a href="/blog/what-to-put-on-the-back-of-an-id-card/">what to put on the back of an ID card</a> has ready-to-copy visitor wording in English and Bangla.</p>
+<figure>
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A CR80 landscape visitor pass drawn to scale at 4 pixels per millimetre: blue top band with organisation name, large VISITOR text, Bangla word below, pass number V-017 at the bottom left, a teal visitor-type band at the bottom and a weekday letter in the corner">
+<rect width="400" height="300" fill="#0f0f12"/>
+<g transform="translate(29,30)">
+<rect x="0" y="0" width="342" height="216" rx="13" fill="#ffffff" stroke="#8b9cff" stroke-width="2"/>
+<rect x="0" y="0" width="342" height="40" rx="13" fill="#8b9cff"/>
+<rect x="0" y="20" width="342" height="20" fill="#8b9cff"/>
+<rect x="16" y="9" width="22" height="22" rx="4" fill="#0f0f12"/>
+<text x="48" y="26" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0f0f12">GREENFIELD TEXTILES LTD</text>
+<text x="171" y="102" font-family="sans-serif" font-size="46" font-weight="bold" fill="#0f0f12" text-anchor="middle">VISITOR</text>
+<text x="171" y="128" font-family="sans-serif" font-size="16" fill="#444" text-anchor="middle">দর্শনার্থী</text>
+<text x="16" y="164" font-family="sans-serif" font-size="22" font-weight="bold" fill="#0f0f12">V-017</text>
+<rect x="0" y="176" width="342" height="40" rx="13" fill="#4fe3c1"/>
+<rect x="0" y="176" width="342" height="20" fill="#4fe3c1"/>
+<text x="16" y="202" font-family="sans-serif" font-size="14" font-weight="bold" fill="#0f0f12">RETURN AT GATE BEFORE LEAVING</text>
+<rect x="282" y="136" width="44" height="34" rx="4" fill="#0f0f12"/>
+<text x="304" y="161" font-family="sans-serif" font-size="22" font-weight="bold" fill="#4fe3c1" text-anchor="middle">W</text>
+</g>
+<text x="200" y="285" font-family="sans-serif" font-size="12" fill="#4fe3c1" text-anchor="middle">CR80, 85.6 × 54 mm at 4 px per mm · VISITOR ≈ 11 mm capitals · number ≈ 5 mm</text>
+</svg>
+<figcaption>A reusable CR80 visitor pass to scale. VISITOR fills most of the width, the pass number is large enough to copy into the log, and the bottom band carries the return instruction. The "W" box is optional, for daily passes coded by weekday.</figcaption>
+</figure>
+
+<h2 id="which-size-should-a-visitor-pass-be">Which size should a visitor pass be?</h2>
+<p>Choose the size by how the pass will be worn:</p>
+<table>
+<thead>
+<tr>
+<th>Size</th>
+<th>mm</th>
+<th>Per A4 sheet</th>
+<th>Use it when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CR80 card</td>
+<td>85.6 × 54</td>
+<td>10</td>
+<td>Reusable passes in a standard card holder or lanyard; cheapest holders</td>
+</tr>
+<tr>
+<td>4 × 3 in badge</td>
+<td>101.6 × 76.2</td>
+<td>6</td>
+<td>Visitors must be recognised from further away (factories, hospitals, schools)</td>
+</tr>
+<tr>
+<td>A6</td>
+<td>105 × 148</td>
+<td>4</td>
+<td>Large portrait day passes for parents' days, exam days or events</td>
+</tr>
+</tbody>
+</table>
+<p>For most sites, <strong>CR80 landscape</strong> is right: holders, lanyards and clips are easy to buy, and a 54 mm tall card still leaves room for a very large VISITOR. On a factory floor or a hospital corridor, where guards check from 3–4 m, the 4 × 3 in badge is worth the extra cost. Pixel sizes for print files are in our <a href="/blog/id-card-size-cr80-mm-inches-pixels/">ID card size chart</a>.</p>
+<p>How big should VISITOR be? Capital letters are about 70% of the font size, and one point is 0.353 mm. On a CR80 card, 36–48 pt bold gives capitals of roughly 9–12 mm, which is readable at 2–3 m. On a 4 × 3 badge, use 54–72 pt. Seven letters at 46 pt fit comfortably in the 85.6 mm width with 5 mm side margins.</p>
+<h2 id="how-to-number-visitor-passes">How to number visitor passes</h2>
+<p>The pass number links a card to a person in your log, so keep it short, easy to say aloud and meaningful at a glance.</p>
+<p>A practical pattern is <strong>prefix + serial</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Visitor type</th>
+<th>Example range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V</td>
+<td>General visitor / guest</td>
+<td>V-001 to V-040</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Contractor / technician</td>
+<td>C-001 to C-015</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Supplier / vendor / delivery</td>
+<td>S-001 to S-020</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Parent / guardian (schools)</td>
+<td>P-001 to P-060</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Interview candidate</td>
+<td>I-001 to I-010</td>
+</tr>
+</tbody>
+</table>
+<p>Rules that save trouble later:</p>
+<ul>
+<li><strong>Three digits, with leading zeros</strong> (<code>V-007</code>, not <code>V-7</code>). They sort correctly in a spreadsheet and look uniform.</li>
+<li><strong>Never reuse a lost number.</strong> If V-017 goes missing, mark it lost in the log and retire it. Print a replacement as V-041. Otherwise a lost pass becomes a valid pass again.</li>
+<li><strong>For multi-gate sites, add a gate letter</strong>: <code>G1-V-017</code>, <code>G2-V-017</code>. Each gate then counts only its own passes at closing time.</li>
+<li><strong>For daily passes</strong>, number them per day and add the date: <code>251126-V-017</code> for 25 November 2026 in DDMMYY order. Pick one date order and use it everywhere.</li>
+</ul>
+<p>Our guide to <a href="/blog/make-id-cards-from-excel-list/">making ID cards from an Excel list</a> shows how to generate a numbered list like this in a spreadsheet, which is the quickest way to print 50 numbered passes at once.</p>
+<h2 id="colour-coding-visitor-type-and-day-of-the-week">Colour coding: visitor type and day of the week</h2>
+<p>Colour lets a guard spot a problem without reading. Use it for two separate things, in separate places on the card.</p>
+<p><strong>1. Visitor type, in the bottom band.</strong> Pick one colour per prefix (for example teal for V, orange for C, grey for S, purple for P) and print the word in the band too. Supplier guidance on reusable badges makes the same point: give each colour <strong>one defined meaning</strong> and write it down, so it never drifts (<a href="https://www.mybinding.com/id-accessories/tempbadges/voidbadge-reusable.html">MyBinding</a>).</p>
+<p><strong>2. Day of the week, for daily passes only.</strong> Print a large weekday letter in a coloured box and change the colour each day. A guard then only needs to know "today is green". A sample rota:</p>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Letter</th>
+<th>Colour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Saturday</td>
+<td>SA</td>
+<td>Red</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>SU</td>
+<td>Orange</td>
+</tr>
+<tr>
+<td>Monday</td>
+<td>M</td>
+<td>Yellow</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>TU</td>
+<td>Green</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>W</td>
+<td>Blue</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>TH</td>
+<td>Purple</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>F</td>
+<td>Grey</td>
+</tr>
+</tbody>
+</table>
+<p>(This rota starts on Saturday because that is the first working day for many organisations in Bangladesh; start it wherever your week begins.)</p>
+<p>Always pair colour with a printed letter or word: red–green colour vision deficiency is common, and colours shift under tube lights. Keep a one-page legend at the gate.</p>
+<h2 id="the-visitor-log-what-to-record">The visitor log: what to record</h2>
+<p>The other half of the system is the visitor register, which many Bangladeshi offices and factories already keep at the gate as a ruled logbook. Make its columns match the pass:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Date</td>
+<td>25/11/2026</td>
+</tr>
+<tr>
+<td>Pass no.</td>
+<td>V-017</td>
+</tr>
+<tr>
+<td>Visitor name</td>
+<td>Farhana Akter</td>
+</tr>
+<tr>
+<td>Organisation / from</td>
+<td>ABC Buying House</td>
+</tr>
+<tr>
+<td>Phone (stays in the log)</td>
+<td>01XXXXXXXXX</td>
+</tr>
+<tr>
+<td>Purpose</td>
+<td>Fabric inspection</td>
+</tr>
+<tr>
+<td>Host / department</td>
+<td>Quality, Mr. Hasan</td>
+</tr>
+<tr>
+<td>Time in</td>
+<td>10:15</td>
+</tr>
+<tr>
+<td>Time out</td>
+<td>12:40</td>
+</tr>
+<tr>
+<td>Pass returned (tick and guard initials)</td>
+<td>✓ RK</td>
+</tr>
+</tbody>
+</table>
+<p>Envoy's <a href="https://envoy.com/visitor-management/how-to-create-a-great-office-visitor-policy">visitor policy guide</a> recommends the same core record and a set retention period. Because the logbook holds personal phone numbers, decide how long you keep it, who may read it and where it is stored. A locked drawer and a one-year retention is a reasonable default for a small organisation; follow your own policy or legal advice where rules apply.</p>
+<blockquote>
+<p><strong>Tip:</strong> If you need to check identity (government offices, banks, factories with buyer audits), look at the visitor's ID and write "ID seen" in the log. Do not keep the visitor's NID card at the desk as a deposit: it is their document, not yours.</p>
+</blockquote>
+<h2 id="how-to-make-sure-every-pass-comes-back">How to make sure every pass comes back</h2>
+<p>Unreturned passes are the weak point of any reusable system. This routine fixes it:</p>
+<ol>
+<li><strong>Issue in order.</strong> Hand out the next free number from a tray or a numbered board, and write it in the log before the visitor goes in.</li>
+<li><strong>Make the pass visible.</strong> Lanyard or clip, worn on the chest, never in a pocket. Staff should be allowed to ask anyone without a visible pass to return to reception.</li>
+<li><strong>Collect at the same desk.</strong> The visitor returns the pass where they got it, and the guard ticks "returned" and writes the time out.</li>
+<li><strong>Count at closing time.</strong> Count passes in the tray against the number issued. Any open line in the log is a pass still out.</li>
+<li><strong>Follow up the same day.</strong> Call the host, not the visitor, first. Most "missing" passes are on a meeting-room table.</li>
+<li><strong>Retire lost numbers.</strong> Mark the line "LOST" and add the number to a list at the gate, so if that pass appears again it is refused.</li>
+<li><strong>Check the stock monthly.</strong> Replace faded or cracked passes and keep about 10% spares.</li>
+</ol>
+<h2 id="printing-a-set-of-visitor-passes-on-a4">Printing a set of visitor passes on A4</h2>
+<p>You do not need a card printer for visitor passes. A batch of 40 reusable CR80 passes is 4 A4 sheets per side.</p>
+<ol>
+<li><strong>Make the list</strong>: pass numbers and visitor types in a spreadsheet (V-001 to V-030, C-001 to C-010, and so on).</li>
+<li><strong>Design one template</strong> with VISITOR, the number field, the type band and your logo. Put the return text and rules on the back.</li>
+<li><strong>Print one test sheet at 100% scale</strong> ("Actual size", never "Fit to page") and measure one card: it should be 85.6 × 54 mm.</li>
+<li><strong>Print fronts, then backs</strong>, checking alignment by holding the sheet up to a light. The steps for duplex printing and cut marks are in <a href="/blog/how-to-print-id-cards-on-a4-paper/">how to print ID cards on A4 paper</a>.</li>
+<li><strong>Laminate or use PVC.</strong> Reusable passes are handled by hundreds of people, so lamination or <a href="/blog/pvc-id-card-printing-at-home/">PVC sheets</a> pay off quickly. Daily paper passes can go straight into a clear pouch.</li>
+<li><strong>Cut, round the corners and punch</strong> the slot for the clip or lanyard.</li>
+<li><strong>Lay them out in number order</strong> in a tray or on a board at the desk, so a gap shows instantly which pass is out.</li>
+</ol>
+<p>If you make cards on a phone, <a href="/cardcraft/">CardCraft</a> includes a Visitor Pass card type alongside Employee, Student and Event cards, imports the pass list from Excel or CSV, and exports 300 DPI A4 sheets with cut marks for front and back. The free version covers up to 10 people, so a large set of numbered passes needs Pro.</p>
+<h2 id="visitor-pass-system-checklist">Visitor pass system checklist</h2>
+<ul>
+<li>Reusable passes and daily passes look clearly different.</li>
+<li>VISITOR is the largest text, readable at 2–3 m (36–48 pt on CR80).</li>
+<li>Every pass has a unique number with a type prefix and leading zeros.</li>
+<li>Each visitor type has one colour and a printed word; daily passes have a weekday letter and colour.</li>
+<li>No visitor phone number, ID number or address is printed on any pass.</li>
+<li>The back carries a return instruction and an office (not personal) phone number.</li>
+<li>The logbook columns include pass number, time in, time out and "returned".</li>
+<li>Passes are counted against the log every evening.</li>
+<li>Lost numbers are retired and listed at the gate, never reissued.</li>
+<li>About 10% spare passes are printed and stored separately.</li>
+</ul>
+<aside class="cta" aria-label="CardCraft app">
+<img src="/assets/cc-icon.webp" alt="CardCraft icon" width="72" height="72" loading="lazy">
+<div><h3 class="h">Make these ID cards on your phone</h3>
+<p>CardCraft has 185 templates, Excel/CSV import, bulk photos and print-ready A4 sheets with cut marks at 300 DPI. Free to start, works offline.</p>
+<a class="btn pri" href="https://play.google.com/store/apps/details?id=com.shadinota.smartid&referrer=utm_source%3Dblog%26utm_medium%3Darticle" target="_blank" rel="noopener">Get CardCraft on Google Play</a></div></aside>
+
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="what-is-a-visitor-pass">What is a visitor pass?</h3>
+<p>A visitor pass is a temporary card given to someone who does not work or study at a site, showing they have been checked in. It usually shows VISITOR, a pass number and the organisation's name, linked to an entry in a visitor log. It is an internal pass, not an identity document.</p>
+<h3 id="what-should-be-written-on-a-visitor-id-card">What should be written on a visitor ID card?</h3>
+<p>Print VISITOR in large letters, a pass number, the organisation name, the visitor type (contractor, vendor, parent) and, on daily passes, the date. On the back, add "return before leaving", key site rules and an office phone number. Keep the visitor's name and phone number in the log rather than on a reusable pass.</p>
+<h3 id="should-a-visitor-pass-have-the-visitors-name-on-it">Should a visitor pass have the visitor's name on it?</h3>
+<p>Only on daily passes that are not reused. Reusable passes should carry a number instead, with the name written in the log next to that number. This keeps the pass reusable and means a lost pass does not reveal who carried it.</p>
+<h3 id="how-do-i-stop-visitors-reusing-old-passes">How do I stop visitors reusing old passes?</h3>
+<p>Use dated or weekday-coloured daily passes for one-off visits, so an old pass is visibly wrong the next day. For reusable passes, collect every pass at the exit, count them against the log each evening, and retire the number of any pass that goes missing.</p>
+<h3 id="what-is-the-best-size-for-a-visitor-badge">What is the best size for a visitor badge?</h3>
+<p>A CR80 card (85.6 × 54 mm) in a standard holder suits most offices and schools and prints 10 per A4 sheet. If guards must recognise visitors from further away, as on a factory floor or in a hospital, use a 4 × 3 inch badge (101.6 × 76.2 mm), which prints 6 per A4 sheet.</p>
+
+<div class="author"><img src="/assets/logo-white-256.webp" alt="" width="52" height="52"><div><b>Md. Ruhul Amin</b>Founder of Shadinota Tech and developer of CardCraft – ID Card Maker. He builds tools in Khulna, Bangladesh, that help schools, offices and print shops make and print ID cards every day.</div></div>
+</article>
+<aside class="toc" aria-label="On this page"><b>On this page</b><a href="#reusable-pass-or-daily-pass-which-do-you-need">Reusable pass or daily pass: which do you need?</a><a href="#what-should-a-visitor-pass-show">What should a visitor pass show?</a><a href="#which-size-should-a-visitor-pass-be">Which size should a visitor pass be?</a><a href="#how-to-number-visitor-passes">How to number visitor passes</a><a href="#colour-coding-visitor-type-and-day-of-the-week">Colour coding: visitor type and day of the week</a><a href="#the-visitor-log-what-to-record">The visitor log: what to record</a><a href="#how-to-make-sure-every-pass-comes-back">How to make sure every pass comes back</a><a href="#printing-a-set-of-visitor-passes-on-a4">Printing a set of visitor passes on A4</a><a href="#visitor-pass-system-checklist">Visitor pass system checklist</a><a href="#frequently-asked-questions">Frequently asked questions</a>
+<div class="side-cta"><p>Make and print ID cards from your phone.</p><a class="btn pri" style="width:100%;min-height:40px;font-size:14px" href="https://play.google.com/store/apps/details?id=com.shadinota.smartid&referrer=utm_source%3Dblog%26utm_medium%3Darticle" target="_blank" rel="noopener">Get CardCraft</a></div></aside>
+</div>
+<section class="related"><h2 class="h">Keep reading</h2><div class="grid"><a class="pcard" href="/blog/make-id-cards-from-excel-list/">
+<img src="/blog/make-id-cards-from-excel-list/og.png" alt="" loading="lazy" width="1200" height="630">
+<div class="pb"><span class="c">Workflows</span><h3 class="h">ID Cards from Excel Data: Prepare, Import and Bulk Print</h3>
+<p>Make ID cards from Excel data without retyping: the column layout, formulas that catch errors, photo file naming, CSV UTF-8 for Bangla and bulk printing steps.</p><span class="d">23 November 2026 · 12 min read</span></div></a><a class="pcard" href="/blog/event-badge-design-and-sizes/">
+<img src="/blog/event-badge-design-and-sizes/og.png" alt="" loading="lazy" width="1200" height="630">
+<div class="pb"><span class="c">Design</span><h3 class="h">Event Badge Design: Sizes, Font Sizes and a Layout That Works</h3>
+<p>Event badge design that people can read across a room: badge sizes in mm and inches, name font sizes, colour-coded roles, QR check-in and A4 print layouts.</p><span class="d">24 November 2026 · 13 min read</span></div></a><a class="pcard" href="/blog/pvc-id-card-printing-at-home/">
+<img src="/blog/pvc-id-card-printing-at-home/og.png" alt="" loading="lazy" width="1200" height="630">
+<div class="pb"><span class="c">Printing</span><h3 class="h">PVC ID Card Printing at Home: 4 Methods, Costs and Steps</h3>
+<p>PVC ID card printing without a card printer: inkjet PVC cards, A4 PVC sheet sets and laminated paper compared, with Bangladesh prices, cost per card and steps.</p><span class="d">22 November 2026 · 13 min read</span></div></a></div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 Shadinota Tech, Khulna, Bangladesh</span>
+<span><a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/cardcraft/">CardCraft</a> · <a href="/privacy.html">Privacy</a> · <a href="/blog/feed.xml">RSS</a></span></div></footer>
+</body></html>

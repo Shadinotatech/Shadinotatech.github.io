@@ -4,7 +4,7 @@ description: Employee ID card design made simple: which fields go on the front a
 slug: employee-id-card-design-what-to-include
 date: 2026-11-18
 category: Design
-updated: 2026-11-21
+updated: 2026-11-26
 keywords: employee id card design, what to include on employee id card, staff id card format, office id card, employee id card back side, employee badge privacy
 ---
 
@@ -147,7 +147,7 @@ For factories, the employee ID number and the name should be readable from a met
 
 ## Colour-coding departments and access levels
 
-Colour is the fastest signal on a card, so use it for one thing only: staff type (permanent, contract, intern, contractor), access zone (office, production floor, store) or department. Pick one and stick to it. Use five or six colours at most, and always add a text label inside the colour band ("CONTRACTOR", "PRODUCTION"), because about one in twelve men has some form of colour vision deficiency and colours also fade or print differently on cheaper printers. Avoid red and green as the only difference between two categories.
+Colour is the fastest signal on a card, so use it for one thing only: staff type (permanent, contract, intern, contractor), access zone (office, production floor, store) or department. Pick one and stick to it. Use five or six colours at most, and always add a text label inside the colour band ("CONTRACTOR", "PRODUCTION"), because about one in twelve men has some form of colour vision deficiency and colours also fade or print differently on cheaper printers. Avoid red and green as the only difference between two categories. For colour pairs with tested contrast ratios and eight layouts to choose from, see our [ID card design ideas](/blog/id-card-design-ideas/).
 
 ## Ready-to-copy text for the back of the card
 

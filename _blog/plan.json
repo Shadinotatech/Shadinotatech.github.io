@@ -182,7 +182,7 @@
   },
   {
    "n": 13,
-   "status": "todo",
+   "status": "published",
    "slug": "portrait-vs-landscape-id-card",
    "primary": "portrait vs landscape id card",
    "secondary": [
@@ -191,7 +191,8 @@
     "id card orientation"
    ],
    "intent": "comparison",
-   "angle": "When each works (lanyard vs clip vs wallet), layout implications, holders."
+   "angle": "When each works (lanyard vs clip vs wallet), layout implications, holders.",
+   "published": "2026-11-27"
   },
   {
    "n": 14,

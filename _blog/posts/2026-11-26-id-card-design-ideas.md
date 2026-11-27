@@ -3,6 +3,7 @@ title: ID Card Design Ideas: 8 Layouts and Colour Pairs That Work
 description: Practical ID card design ideas: 8 layouts with exact mm sizes, colour combinations with tested contrast ratios, background rules and a print-ready checklist.
 slug: id-card-design-ideas
 date: 2026-11-26
+updated: 2026-11-27
 category: Design
 keywords: id card design ideas, id card color combination, modern id card design, id card background, id card layout, id card colour scheme
 ---
@@ -267,7 +268,7 @@ You can, but keep it out from behind the text. Put the picture in the header ban
 
 ### Should an ID card be portrait or landscape?
 
-Portrait cards hang straight on lanyards and are common in schools, hospitals and events; landscape cards suit wallets, clips and horizontal holders. Every layout in this guide except photo-left works in both orientations.
+Portrait cards hang straight on lanyards and are common in schools, hospitals and events; landscape cards suit wallets, clips and horizontal holders. Every layout in this guide except photo-left works in both orientations; our [portrait vs landscape ID card comparison](/blog/portrait-vs-landscape-id-card/) has the measurements, slot positions and a decision table.
 
 ### How many colours should an ID card have?
 

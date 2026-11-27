@@ -34,8 +34,6 @@ STATIC_PAGES = [
     ("/", "weekly", "1.0"),
     ("/cardcraft/", "monthly", "0.9"),
     ("/blog/", "daily", "0.8"),
-    ("/privacy", "yearly", "0.3"),
-    ("/invoiceatlas/privacy", "yearly", "0.3"),
 ]
 
 # ---------------------------------------------------------------- parsing

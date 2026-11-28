@@ -4,7 +4,7 @@ description: What to put on the back side of an ID card: six blocks in priority 
 slug: what-to-put-on-the-back-of-an-id-card
 date: 2026-11-21
 category: Design
-updated: 2026-11-25
+updated: 2026-11-28
 keywords: back side of id card, id card back design, id card back side text, if found return id card text, id card terms and conditions, id card back side in bangla
 ---
 
@@ -105,7 +105,7 @@ A few layout rules that keep the back readable:
 - **Bold the label, not the whole line:** "**Valid until:** 31 Dec 2027" scans faster than a fully bold sentence.
 - **Keep the signature real size.** A signature squeezed to 4 mm tall looks like a scribble; give it 8–10 mm of height over a printed name and title.
 
-> **Tip:** The authorised signature looks cleanest when the paper behind it is removed. Sign on plain white paper with a dark pen, photograph it flat in good light and use a transparent PNG. CardCraft does this from a photo, so the signature sits on any background colour.
+> **Tip:** The authorised signature looks cleanest when the paper behind it is removed. Sign on plain white paper with a dark pen, photograph it flat in good light and use a transparent PNG. CardCraft does this from a photo, so the signature sits on any background colour. For pen choice, exact sizes in mm and pixels and fixes for white boxes or grey halos, see our guide to [making a transparent signature for an ID card](/blog/transparent-signature-for-id-card/).
 
 ## Ready-to-copy text for the back of an ID card
 

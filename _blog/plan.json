@@ -196,7 +196,7 @@
   },
   {
    "n": 14,
-   "status": "todo",
+   "status": "published",
    "slug": "transparent-signature-for-id-card",
    "primary": "transparent signature for id card",
    "secondary": [
@@ -205,7 +205,8 @@
     "authorized signature on id card"
    ],
    "intent": "how-to",
-   "angle": "Capture signature on paper with phone, remove background, size and placement on card."
+   "angle": "Capture signature on paper with phone, remove background, size and placement on card.",
+   "published": "2026-11-28"
   },
   {
    "n": 15,
